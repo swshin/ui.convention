@@ -195,7 +195,7 @@ define(function(){
 
 	var CodeFormatting = function(data){
 		var val = data;
-	    var element = /(<|<\/){1}(meta|title|link|script|noscript|style|embed|button|iframe|html|head|body|div|h1|h2|h3|h4|h5|ul|ol|li|dl|dt|dd|b|big|i|img|input|span|a|i|small|strong|em|section|nav|header|footer|p|form|fieldset|label|legend|table|tr|thead|tbody|td|tfoot|area|map)/g;
+	    var element = /(<|<\/){1}(meta|title|link|script|noscript|style|embed|button|iframe|html|head|body|div|h1|h2|h3|h4|h5|ul|ol|li|dl|dt|dd|b|big|i|img|input|span|a|i|small|strong|em|section|nav|header|footer|p|form|fieldset|label|legend|table|tr|thead|tbody|td|tfoot|area|map|select|option)/g;
 	    var depthPatt = /<\//;
 	    var singleEle = /(<|<\/){1}(meta|link|img|input|br|hr|area|embed)/;	    
 	    var trans = val.replace(/[\t\n\s]/g, '').replace(/</g, '\n<').replace(/>/g, '>\n').split('\n');
