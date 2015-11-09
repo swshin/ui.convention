@@ -61,7 +61,7 @@ section {margin-top:50px;font-size:13px;color:#666;}
 .contents h1.header-title strong {display:inline;}
 
 section h2, section h3, section h4 {font-family:'Malgun Gothic','Open Sans','Spoqa Han Sans',Malgun Gothic;color:#443e2d;font-weight:normal;}
-section h2 {margin-bottom:10px;font-size:34px;font-weight:500}
+section h2 {margin-bottom:10px;font-size:24px;}
 section h3 {padding:20px 0 10px;font-size:24px;font-weight:normal}
 section h4 {overflow:hidden;height:25px;line-height:22px;margin:50px 0 12px;border-left:3px solid #cbdb2a;padding-left:10px;font-size:22px;font-weight:400}
 h1 + section {margin-top:30px}
