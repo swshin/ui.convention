@@ -1,0 +1,544 @@
+0@charset "utf-8";
+/*
+ * 설명	 : UI 템플릿 CSS - IE7부터.. 수정시 UI 담당자에게 확인 바랍니다.
+------------------------------------------------------------------
+1. Scrollbar
+2. Icon Templete
+3. Form Templete - 30, 기본 40, 50
+	└ input & textarea
+	└ checkbox & radio
+	└ select & combo
+	└ button : a, button, input, etc
+4. Navigation Style 
+	└ Tab 
+	└ Pagination
+5. Layer
+	└ tip 
+	└ modal 
+6. Table Style
+7. Etc - 준비중 
+	└ 로딩
+	└ 별점
+	└ 그래프
+	└ 캘린더
+0. Browser Hack 
+0. Media Queries 
+
+* 1. Scrollbar *****************************************/
+html {scrollbar-base-color:#5a5b5c;scrollbar-face-color:#fff;scrollbar-shadow-color:#c9c9c9;scrollbar-highlight-color:#c9c9c9;scrollbar-3dlight-color:#ebeef0;scrollbar-darkshadow-color:#ebeef0;scrollbar-track-color:#ebeef0;scrollbar-arrow-color:#5a5b5c}
+::-webkit-scrollbar {width:17px;height:17px}
+::-webkit-scrollbar-track {padding:1px;background:#ebeef0}
+::-webkit-scrollbar-thumb {border:1px solid #ebeef0;background-color:#fff;-webkit-box-shadow:inset 0 0 0 1px #c9c9c9}
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {display:block;width:17px;height:17px;background:url(http://image.gsshop.com/mi13/img/btn/btn_scrollbar.gif) no-repeat}
+::-webkit-scrollbar-button:end:increment {background-position:0 -17px}
+::-webkit-scrollbar-button:horizontal:increment {background-position:-17px -17px}
+::-webkit-scrollbar-button:horizontal:decrement {background-position:-17px 0}
+.scrollbar2::-webkit-scrollbar {width:7px}
+.scrollbar2::-webkit-scrollbar-track {border-width:0;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2)}
+.scrollbar2::-webkit-scrollbar-thumb {border-width:0;background:#fff;}
+.scrollbar2::-webkit-scrollbar-thumb:window-inactive {background:rgba(0,0,0,1)}
+.scrollbar2::-webkit-scrollbar-button:start:decrement,.scrollbar2::-webkit-scrollbar-button:end:increment {display:none}
+
+/* 2. Icon Templete ***********************************/ 
+/* Icon Templete */
+.tmp-ico {display:inline-block;overflow:hidden;width:24px;height:24px;padding:0;font:0/0 m;background:url(http://image.gsshop.com/mi13/img/ico/ico_sprite_black.png) no-repeat;vertical-align:middle;opacity:0.65}
+.tmp-ico.lime {background-image:url(http://image.gsshop.com/mi13/img/ico/ico_sprite_lime.png);opacity:1}
+.tmp-ico.white,.red>.tmp-ico,.green>.tmp-ico,.khaki>.tmp-ico,.gray>.tmp-ico,.tmp-btn.red .tmp-ico,.tmp-btn.green .tmp-ico,.tmp-btn.khaki .tmp-ico,.tmp-btn.gray .tmp-ico {background-image:url(http://image.gsshop.com/mi13/img/ico/ico_sprite_white.png);opacity:1}
+.tmp-ico.v2{background-position:-24px 0}.tmp-ico.v3{background-position:-48px 0}.tmp-ico.v4{background-position:-72px 0}.tmp-ico.v5{background-position:-96px 0}.tmp-ico.v6{background-position:-120px 0}.tmp-ico.v7{background-position:-144px 0}.tmp-ico.v8{background-position:-168px 0}.tmp-ico.v9{background-position:-192px 0}.tmp-ico.v10{background-position:-216px 0}.tmp-ico.v11{background-position:0 -24px}.tmp-ico.v12{background-position:-24px -24px}.tmp-ico.v13{background-position:-48px -24px}.tmp-ico.v14{background-position:-72px -24px}.tmp-ico.v15{background-position:-96px -24px}.tmp-ico.v16{background-position:-120px -24px}.tmp-ico.v17{background-position:-144px -24px}.tmp-ico.v18{background-position:-168px -24px}.tmp-ico.v19{background-position:-192px -24px}.tmp-ico.v20{background-position:-216px -24px}.tmp-ico.v21{background-position:0 -48px}.tmp-ico.v22{background-position:-24px -48px}.tmp-ico.v23{background-position:-48px -48px}.tmp-ico.v24{background-position:-72px -48px}.tmp-ico.v25{background-position:-96px -48px}.tmp-ico.v26{background-position:-120px -48px}.tmp-ico.v27{background-position:-144px -48px}.tmp-ico.v28{background-position:-168px -48px}.tmp-ico.v29{background-position:-192px -48px}.tmp-ico.v30{background-position:-216px -48px}.tmp-ico.v31{background-position:0 -72px}.tmp-ico.v32{background-position:-24px -72px}.tmp-ico.v33{background-position:-48px -72px}.tmp-ico.v34{background-position:-72px -72px}.tmp-ico.v35{background-position:-96px -72px}.tmp-ico.v36{background-position:-120px -72px}.tmp-ico.v37{background-position:-144px -72px}.tmp-ico.v38{background-position:-168px -72px}.tmp-ico.v39{background-position:-192px -72px}.tmp-ico.v40{background-position:-216px -72px}.tmp-ico.v41{background-position:0 -96px}.tmp-ico.v42{background-position:-24px -96px}.tmp-ico.v43{background-position:-48px -96px}.tmp-ico.v44{background-position:-72px -96px}.tmp-ico.v45{background-position:-96px -96px}.tmp-ico.v46{background-position:-120px -96px}.tmp-ico.v47{background-position:-144px -96px}.tmp-ico.v48{background-position:-168px -96px}.tmp-ico.v49{background-position:-192px -96px}.tmp-ico.v50{background-position:-216px -96px}.tmp-ico.v51{background-position:0 -120px}.tmp-ico.v52{background-position:-24px -120px}.tmp-ico.v53{background-position:-48px -120px}.tmp-ico.v54{background-position:-72px -120px}.tmp-ico.v55{background-position:-96px -120px}.tmp-ico.v56{background-position:-120px -120px}.tmp-ico.v57{background-position:-144px -120px}.tmp-ico.v58{background-position:-168px -120px}.tmp-ico.v59{background-position:-192px -120px}.tmp-ico.v60{background-position:-216px -120px}
+.tmp-ico:hover {opacity:1}
+
+/* 3. Form Templete ***********************************/
+/*└ Input & Textarea : 기본40 ******/
+.tmp-input {height:24px;padding:6px 9px 8px;border:1px solid #d9d9d9;font-size:14px;color:#777}
+.tmp-input::-ms-clear {display:none}
+.tmp-input:hover {border-color:#acacac}
+.tmp-input.small {height:16px;padding:2px 6px 4px;font-size:12px}
+.tmp-input.mid {height:19px;padding:4px 9px 5px}
+.tmp-input.big {height:34px;padding:6px 9px 8px;font-size:18px}
+.tmp-input.focus, .tmp-input:focus {border-color:#acacac;color:#333;z-index:10;outline:none}	
+.tmp-input.error {border-bottom-color:#ee1f60;color:#f22867}
+.tmp-input.disabled {border-color:#c9c9c9;background:#eee;cursor:normal}
+.input-wrap {position:relative;display:inline-block}
+.input-wrap .tmp-input {padding-right:29px}
+.input-wrap .absolute.tmp-ico {top:50%;left:5px;margin-top:-12px}
+.input-wrap .absolute.pos-e {left:auto;right:5px}
+.input-wrap .del {display:none}
+.srch .tmp-input {padding-left:29px;background:#fafafa} /* 검색입력 */
+
+.textarea {border:1px solid #c9c9c9;background:#fff}
+.textarea textarea {width:100%;padding:8px 8px;border:0 none;box-sizing:border-box;line-height:20px}
+.textarea:hover {border-color:#acacac}
+.textarea:focus {border-color:#91bb21;color:#333}
+.textarea .relative {background:#f4f4f4}
+.textarea .btn-files, .textarea .word-len {display:inline-block;height:30px;line-height:30px;padding:0 10px}
+.textarea .btn-files .tmp-ico {position:relative;top:-1px;margin-right:2px}
+.textarea .word-len {position:absolute;bottom:0;right:0;color:#777}
+.textarea .word-len em {color:#333}
+.textarea.red:focus, .tmp-input.red:focus {border-color:#f22867}	 
+.textarea.green:focus, .tmp-input.green:focus {border-color:#00a4b3}	
+.repalceHolder {display:inline-block;height:22px;position:absolute;top:50%;margin-top:-11px;left:10px;line-height:22px;background:#fff;cursor:auto} /* IE9이하 가상 placeholder */
+
+/* 수량 input & Page Control */
+.tmp-cnt-box, .tmp-pg-box {position:relative;display:inline-block;text-align:center;vertical-align:top}
+.tmp-cnt-box .tmp-input {width:32px;margin:0 27px;background:#eee;text-align:center;font-size:14px;color:#333}
+.tmp-pg-box .pagination {display:block;min-width:36px;width:auto;height:28px;line-height:27px;padding:0 4px;border:1px solid #c9c9c9;margin:0 27px;background:#f9f9f9;text-align:center}
+.tmp-cnt-box a, .tmp-pg-box a {display:block;overflow:hidden;position:absolute;top:0;left:0}
+.tmp-cnt-box .plus, .tmp-pg-box .next {left:auto;right:0}
+.tmp-cnt-box.h30, .tmp-pg-box.h30 {padding:0 29px}
+.tmp-pg-box .tmp-ico {opacity:0.4}
+.tmp-cnt-box *:hover, .tmp-pg-box *:hover {z-index:5}
+
+
+
+/*└ Checkbox & Radio **********/
+.tmp-check, .tmp-radio {display:inline-block;position:relative;overflow:hidden;vertical-align:middle;color:#555}
+.tmp-check input, .tmp-radio input {position:absolute;width:21px;height:21px;opacity:0;filter:alpha(opacity=0)}
+.tmp-check label, .tmp-radio label {display:inline-block;position:relative;min-height:20px;padding:2px 5px 3px 25px;line-height:18px}
+.tmp-check label i, .tmp-radio label i {display:inline-block;width:19px;height:19px;position:absolute;top:2px;left:0;border:1px solid #c9c9c9;background:url(http://image.gsshop.com/mi13/img/ico/tmp_frm.png) no-repeat 50px 0;cursor:normal}
+.tmp-check label i {background-color:#fff}
+.tmp-check.over, .tmp-radio.over {color:#333}
+.tmp-check.over label i {border-color:#c3c3c3;background-position:0 0}
+.tmp-check.checked label {font-weight:600;color:#333}
+.tmp-check.checked label i {border-color:#c2d228;background-color:#cbdb2a;background-position:0 -30px}
+.tmp-check.checked.over label i {border-color:#8bb717;background-color:#91bb21}
+.tmp-check.disabled label {color:#999}
+.tmp-check.disabled label i {background:#eee !important;border-color:#dedede !important}
+.tmp-radio label {padding-left:28px}
+.tmp-radio label i {width:24px;height:24px;border:0 none;top:0;background-position:0 -90px}
+.tmp-radio.over label i {background-position:0 -120px}
+.tmp-radio.checked label {font-weight:600;color:#333}
+.tmp-radio.checked label i {background-position:-0 -150px}
+.tmp-radio.checked.over label i {background-position:0 -180px}
+.tmp-radio.disabled label {color:#999}
+.tmp-radio.disabled label i {background-position:0 -210px}
+/*└ Type2 */
+.tmp-check.type2, .tmp-radio.type2 {line-height:16px}
+.tmp-check.type2 input, .tmp-radio.type2 input {width:16px;height:16px}
+.tmp-check.type2 label, .tmp-radio.type2 label {padding-left:23px}
+.tmp-check.type2 label i {top:4px;width:14px;height:14px} 
+.tmp-check.type2.over label i {background-position:-30px 0}
+.tmp-check.type2.checked label {font-weight:normal}
+.tmp-check.type2.checked label i {background-position:-30px -30px}
+.tmp-radio.type2 label i {top:4px;left:0;width:18px;height:18px;background-position:-30px -90px}
+.tmp-radio.type2.over label i {background-position:-30px -120px}
+.tmp-radio.type2.checked label {font-weight:normal}
+.tmp-radio.type2.checked label i {background-position:-30px -150px}
+.tmp-radio.type2.checked.over label i {background-position:-30px -180px}
+.tmp-radio.type2.disabled label i {background-position:-30px -210px}
+/*└ Color : 녹색 */
+.tmp-check.green label i, .tmp-radio.green label i {background-image:url(http://image.gsshop.com/mi13/img/ico/tmp_form_green.png)}
+.tmp-check.green.over label i {border-color:#c3c3c3}
+.tmp-check.green.checked.over label i {border-color:#00a4b3}
+.tmp-check.type2.green.over label i {border-color:#c3c3c3}
+.tmp-check.type2.green.checked label i {border-color:#00aebd;background-color:#00aebd}
+.tmp-check.type2.green.checked.over label i {border-color:#0094a4;background-color:#0094a4}
+/* : 빨강 */
+.tmp-check.red label i, .tmp-radio.red label i {background-image:url(http://image.gsshop.com/mi13/img/ico/tmp_form_red.png)}
+.tmp-check.red.checked.over label i {border-color:#f22867}
+.tmp-check.type2.red.checked label i {border-color:#f22867;background-color:#f22867}
+.tmp-check.type2.red.checked.over label i {border-color:#d90245;background-color:#d90245}
+/* : 카키 */
+.tmp-check.khaki label i, .tmp-radio.khaki label i {background-image:url(http://image.gsshop.com/mi13/img/ico/tmp_form_khaki.png)}
+.tmp-check.khaki.checked.over label i {border-color:#958e71}
+.tmp-check.type2.khaki.checked label i {border-color:#b2a985;background-color:#b2a985}
+.tmp-check.type2.khaki.checked.over label i {border-color:#958e71;background-color:#958e71}
+/* : 회색 */
+.tmp-check.gray label i, .tmp-radio.gray label i {background-image:url(http://image.gsshop.com/mi13/img/ico/tmp_form_gray.png)}
+.tmp-check.gray.checked.over label i {border-color:#717171}
+.tmp-check.type2.gray.checked label i {border-color:#8e9091;background-color:#8e9091}
+.tmp-check.type2.gray.checked.over label i {border-color:#717171;background-color:#707070}
+
+/*└ Select Box : 기본40 ************/
+.tmp-select {display:inline-block;position:relative;min-width:140px;border:1px solid #bbb;text-align:left;background:#fff;vertical-align:middle}
+.tmp-select select {position:absolute;top:0;left:-1px;display:block;width:100.5%;min-height:38px;padding-left:2px;border:0 none;opacity:0;filter:alpha(opacity=0)}
+.tmp-select .current {display:block;position:relative;overflow:hidden;min-height:38px;padding:0 28px 0 9px;color:#333;cursor:pointer;line-height:37px;text-overflow:ellipsis;white-space:nowrap}
+.tmp-select .btn-opt {display:block;overflow:hidden;position:absolute;top:0;right:0;width:26px;height:100%;cursor:pointer}
+.tmp-select .btn-opt.line {border-left:1px solid #c9c9c9}
+.tmp-select .btn-opt i {display:block;width:26px;height:34px;position:absolute;top:50%;left:50%;margin:-17px 0 0 -13px;background:url(http://image.gsshop.com/mi13/img/ico/tmp_form_lime02.png) no-repeat 7px -57px;font:0/0 m;opacity:0.7;filter:alpha(opacity=70)}
+.tmp-select .btn-opt i.arr2 {background-position:7px 0}
+.tmp-select:hover {border-color:#acacac;box-shadow:1px 1px 2px #eee}
+.tmp-select:hover .btn-opt i {opacity:1;filter:alpha(opacity=100)}
+.tmp-select a:hover,.tmp-select a:focus {text-decoration:none;outline:none}
+.tmp-select ul {display:none;width:100%;height:0;max-height:280px;position:absolute;top:38px;left:-1px;border:1px solid #acacac;background:#fff;z-index:999;overflow:auto;overflow-x:hidden}
+.tmp-select ul.chk-lst {display:block;left:-5000%}
+.tmp-select ul.up-mode {bottom:38px;top:auto}
+.tmp-select li {position:relative;overflow:hidden;width:100%;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;margin-top:-1px;text-align:left;cursor:pointer}
+.tmp-select li:first-child {border-top:0 none}
+.tmp-select li input {position:absolute;top:-100%}
+.tmp-select li a, .tmp-select li label {display:block;padding:9px 9px 11px;line-height:1.357em}
+.tmp-select li a:hover, .tmp-select li label:hover, .tmp-select li.over a, .tmp-select li.over label {background-color:#f4f4f4;color:#333;cursor:pointer}
+.tmp-select li.on {border-color:#cbdb2a;z-index:10}
+.tmp-select li.on a, .tmp-select li.on label {color:#333;background-color:#cbdb2a}
+.tmp-select li.on a:hover, .tmp-select li.on label {color:#333}
+.tmp-select li.disabled *, .tmp-select li.disabled a, .tmp-select li.disabled label {color:#999;font-weight:normal}
+.tmp-select li.disabled a:hover, .tmp-select li.disabled label:hover {cursor:auto;opacity:0.8}
+.tmp-select li.disabled img {opacity:.6;filter:alpha(opacity=60)}
+.tmp-select.focus {border-color:#91bb21	;/*box-shadow:0 0 2px #00a4b3*/}
+.tmp-select.focus .current {color:#333}
+.tmp-select.on {border-color:#acacac;z-index:1000}
+.tmp-select.on ul {display:block;height:auto}
+.tmp-select.on ul.chk-lst {left:-1px}
+.tmp-select.on .current {color:#333}
+.tmp-select.on .btn-opt i {background-position:7px -88px}
+.tmp-select.on .btn-opt i.arr2 {background-position:7px -30px}
+.tmp-select.on .btn-opt i, .tmp-select.focus .btn-opt i {opacity:1;filter:alpha(opacity=100)}
+/* : multi 타입 */
+.tmp-select.multi li label {line-height:19px;padding-left:35px}
+.tmp-select.multi li label i {top:9px;left:9px}
+.tmp-select.multi li.on label {color:#333}
+.tmp-select.multi .type2 label {padding:3px 9px 4px 30px}
+.tmp-select.multi .type2 label i {top:5px;left:9px}
+/* : click 타입 */
+.tmp-select.clicked.on, .tmp-select.multi.on {border-color:#91bb21} 
+.tmp-select.clicked.on ul, .tmp-select.multi.on ul {border-color:#b4b6b8 #91bb21 #91bb21}
+.tmp-select.clicked.on ul.up-mode, .tmp-select.multi.on ul.up-mode {border-color:#91bb21 #91bb21 #b4b6b8}
+/* : 높이값 30 */
+.tmp-select.mid .current {min-height:28px;line-height:27px}
+.tmp-select.mid ul {top:28px}
+.tmp-select.mid li a, .tmp-select.mid li label {padding:5px 9px 7px}
+
+/*└ 이미지형  ****/
+.tmp-select.img-type {min-width:430px}
+.tmp-select.img-type .current {text-overflow:clip;white-space:normal}
+.tmp-select.img-type ul {max-height:294px}
+.tmp-select.img-type ul, .tmp-select.img-type li a {padding:0}
+.tmp-select .opt-img {display:inline-block;margin:4px;vertical-align:middle;background:#eee}
+.tmp-select .opt-img img {width:50px;height:50px}
+.tmp-select .opt-txt {display:inline-block;vertical-align:middle;overflow:hidden;width:265px;padding:0 0 0 8px;max-height:38px;line-height:19px}
+.tmp-select .opt-cnt {display:inline-block;vertical-align:middle;width:60px;text-align:right;color:#333;font-weight:normal;font-size:12px}
+.tmp-select.img-type .current {top:0}
+.tmp-select.img-type .current span {margin-left:-5px}
+.tmp-select.img-type .current .opt-txt {margin:0} 
+.tmp-select.img-type .current .opt-cnt {display:none} 
+
+/*└ 펼침형  *****/
+.tmp-select.spread {width:auto;border:0 none;background:none}
+.tmp-select.spread:hover, .tmp-select.spread.over {box-shadow:none}
+.tmp-select.spread .current, .tmp-select.spread .btn-opt {display:none}
+.tmp-select.spread ul {display:block;position:static;overflow:visible;height:auto;padding:0;border:0 none;background:none}
+.tmp-select.spread ul:after {display:block;clear:both;content:''}
+.tmp-select.spread li {position:static;float:left;width:auto;margin-left:-1px;border:0 none;background:none;text-align:center} 
+.tmp-select.spread li:first-child {margin-left:0}
+.tmp-select.spread li a,
+.tmp-select.spread li label {position:relative;display:block;height:38px;line-height:37px;padding:0 12px;border:1px solid #c9c9c9;background:#f4f4f4;color:#999}
+.tmp-select.spread li a {background:#fff;font-weight:600;color:#333;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tmp-select.spread li:focus {text-decoration:none;color:#333}
+.tmp-select.spread li.on {background:#fff}
+.tmp-select.spread li.on a {background:#cbdb2a;border-color:#cbdb2a;z-index:10}
+.tmp-select.spread li.on label {padding-left:25px;border-color:#c7cad0;background:#fff;color:#333;z-index:10}
+.tmp-select.spread li.on label i {display:inline-block;width:18px;height:18px;position:absolute;top:50%;left:6px;margin-top:-7px;background:url(http://image.gsshop.com/mi13/img/ico/tmp_frm.png) no-repeat -28px -60px}
+.tmp-select.spread li:hover {background:#fff;z-index:11}
+.tmp-select.spread li a:hover,.tmp-select.spread li label:hover, .tmp-select.spread li.over a {border-color:#91bb21;color:#333;z-index:11}
+.tmp-select.spread li.on a:hover,.tmp-select.spread li.on a:focus {color:#333;text-decoration:none}
+.tmp-select.spread.focus {box-shadow:none}
+.tmp-select.spread.focus li.on {/*box-shadow:0 0 2px #00a4b3*/}
+.tmp-select.spread.focus li.on a, .tmp-select.spread.focus li.on label {border-color:#91bb21} 
+.tmp-select.spread ul.chk-lst li {position:relative}
+/* : Type2 (라디오 tab case) */
+.tmp-select.spread.type2 li {padding:1px 0;margin-right:-1px} 
+.tmp-select.spread.type2 li.on, .tmp-select.spread.type2 li:hover {background:none}
+.tmp-select.spread li.on label {padding-left:25px;border-color:#c7cad0;color:#333;z-index:10}
+.tmp-select.spread.type2 li label {height:28px;line-height:26px;padding:0 10px 0 17px;border:0 none;background:url(http://image.gsshop.com/mi13/img/ico/dotx2_gray.gif) no-repeat 10px 14px}
+.tmp-select.spread.type2 li.on label {background:none;color:#333}
+.tmp-select.spread.type2 li.on label i {left:-2px}
+/* : multi 타입 */
+.tmp-select.spread.multi li {height:auto;line-height:1.3em}
+.tmp-select.spread.multi li:hover {background:none}
+.tmp-select.spread.multi li label {height:auto;padding:2px 10px 3px 25px;min-height:20px;line-height:18px;border:0 none;background:none;color:#333}
+.tmp-select.spread.multi li label i {top:2px;left:0}
+.tmp-select.spread.multi li.type2 label  {padding-left:23px}
+.tmp-select.spread.multi li.type2 label i {top:2px}
+/* : 높이값 30 */
+.tmp-select.spread.mid li {height:30px} 
+.tmp-select.spread.mid li a, .tmp-select.spread.mid li label {height:28px;line-height:26px}
+.tmp-select.spread.mid li.on label {background-position:8px 10px;color:#333}
+
+/*└ Color : 녹색 */
+.tmp-select.green li.on a, .tmp-select.green li.on label {color:#058591}
+.tmp-select.green.focus {border-color:#00aebd}
+.tmp-select.spread.green li.on a {border-color:#00aebd;background-color:#00aebd;color:#fff}
+.tmp-select.spread.green li.on label {color:#333}
+.tmp-select.spread.green li.on label i {background-image:url(http://image.gsshop.com/mi13/img/ico/tmp_form_green.png)}
+.tmp-select.spread.green li a:hover,.tmp-select.spread.green li label:hover, .tmp-select.spread.green li.over a {border-color:#00aebd}
+.tmp-select.spread.green.focus li.on a, .tmp-select.spread.green.focus li.on label {border-color:#01aebe} 
+.tmp-select.clicked.green.on, .tmp-select.multi.green.on {border-color:#01aebe}
+.tmp-select.clicked.green.on ul, .tmp-select.multi.green.on ul {border-color:#b4b6b8 #01aebe #01aebe}
+.tmp-select.clicked.green.on ul.up-mode, .tmp-select.multi.green.on ul.up-mode {border-color:#01aebe #01aebe #b4b6b8}
+.tmp-select.img-type.green .on .opt-txt em {color:#058591}
+/* : 빨강 */
+.tmp-select.red li.on a, .tmp-select.red li.on label {color:#f22867}
+.tmp-select.red.focus {border-color:#f22867}
+.tmp-select.spread.red li.on a {border-color:#f22867;background-color:#f22867;color:#fff}
+.tmp-select.spread.red li.on label {color:#333}
+.tmp-select.spread.red li.on label i {background-image:url(http://image.gsshop.com/mi13/img/ico/tmp_form_red.png)}
+.tmp-select.spread.red li a:hover,.tmp-select.spread.red li label:hover, .tmp-select.spread.red li.over a {border-color:#f22867}
+.tmp-select.spread.red.focus li.on a, .tmp-select.spread.red.focus li.on label {border-color:#f22867} 
+.tmp-select.clicked.red.on, .tmp-select.multi.red.on {border-color:#f22867}
+.tmp-select.clicked.red.on ul, .tmp-select.multi.red.on ul {border-color:#b4b6b8 #f22867 #f22867}
+.tmp-select.clicked.red.on ul.up-mode, .tmp-select.multi.red.on ul.up-mode {border-color:#f22867 #f22867 #b4b6b8}
+.tmp-select.img-type.red .on .opt-txt em {color:#f22867}
+/* : 카키 */
+.tmp-select.khaki li.on a, .tmp-select.khaki li.on label {color:#958e71}
+.tmp-select.khaki.focus {border-color:#958e71}
+.tmp-select.spread.khaki li.on a {border-color:#b2a985;background-color:#b2a985;color:#fff}
+.tmp-select.spread.khaki li.on label {color:#333}
+.tmp-select.spread.khaki li.on label i {background-image:url(http://image.gsshop.com/mi13/img/ico/tmp_form_khaki.png)}
+.tmp-select.spread.khaki li a:hover,.tmp-select.spread.khaki li label:hover, .tmp-select.spread.khaki li.over a {border-color:#958e71}
+.tmp-select.spread.khaki.focus li.on a, .tmp-select.spread.khaki.focus li.on label {border-color:#958e71} 
+.tmp-select.clicked.khaki.on, .tmp-select.multi.khaki.on {border-color:#958e71}
+.tmp-select.clicked.khaki.on ul, .tmp-select.multi.khaki.on ul {border-color:#b4b6b8 #958e71 #958e71}
+.tmp-select.clicked.khaki.on ul.up-mode, .tmp-select.multi.khaki.on ul.up-mode {border-color:#958e71 #958e71 #b4b6b8}
+.tmp-select.img-type.khaki .on .opt-txt em {color:#958e71}
+/* : 회색 */
+.tmp-select.gray li.on a, .tmp-select.gray li.on label {color:#717171}
+.tmp-select.gray.focus {border-color:#707070}
+.tmp-select.spread.gray li.on a {border-color:#8e9091;background-color:#8e9091;color:#fff}
+.tmp-select.spread.gray li.on label {color:#333}
+.tmp-select.spread.gray li.on label i {background-image:url(http://image.gsshop.com/mi13/img/ico/tmp_form_gray.png)}
+.tmp-select.spread.gray li a:hover,.tmp-select.spread.gray li label:hover, .tmp-select.spread.gray li.over a {border-color:#707070}
+.tmp-select.spread.gray.focus li.on a, .tmp-select.spread.gray.focus li.on label {border-color:#707070} 
+.tmp-select.clicked.gray.on, .tmp-select.multi.gray.on {border-color:#958e71}
+.tmp-select.clicked.gray.on ul, .tmp-select.multi.gray.on ul {border-color:#b4b6b8 #707070 #707070}
+.tmp-select.clicked.gray.on ul.up-mode, .tmp-select.multi.gray.on ul.up-mode {border-color:#707070 #707070 #b4b6b8}
+.tmp-select.img-type.gray .on .opt-txt em {color:#717171}
+
+
+/*└ Button Templete : 기본40 **********/
+.tmp-btn, .tmp-btn a, .tmp-btn button, .tmp-btn input {display:inline-block;position:relative;height:38px;cursor:pointer;white-space:nowrap;font-family:Malgun Gothic,applegothic;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;transition:all .2s ease}
+.tmp-btn {overflow:hidden;border:1px solid #c9c9c9;background-color:#fff;vertical-align:middle}
+.tmp-btn a, .tmp-btn button, .tmp-btn input {line-height:37px;padding:0 15px;margin:0;color:#333;text-align:center;vertical-align:top;outline:0}
+.tmp-btn button, .tmp-btn input {height:37px;overflow:visible;border:0 none;background:none}
+.tmp-btn.over, .tmp-btn:hover {border-color:#acacac;background-color:#f6f9fa;color:#000;text-decoration:none;box-shadow:1px 1px 2px #eee}
+.tmp-btn.over *, .tmp-btn *:hover, .tmp-btn *:focus {color:#000;text-decoration:none;outline:0}
+.tmp-btn.active, .tmp-btn:active {box-shadow:inset 0 1px 3px #ddd;background-color:#fff;*background:url(http://image.gsshop.com/mi13/img/ico/tmp_form_lime.png) repeat-x 0 -240px}
+.tmp-btn.type-ico {width:38px;border-color:#c9c9c9}
+.tmp-btn.type-ico:hover {border-color:#acacac}
+.tmp-btn.type-ico button {width:38px;height:38px}
+/*└ Size : 높이값 24 */
+.tmp-btn.small {height:22px}
+.tmp-btn.small a,.tmp-btn.small input,.tmp-btn.small button {height:22px;line-height:21px;padding:0 7px;font-size:12px}
+.tmp-btn.small input,.tmp-btn.small button {height:20px}
+/*└ Size : 높이값 30 */
+.tmp-btn.mid {height:28px}
+.tmp-btn.mid a, .tmp-btn.mid input, .tmp-btn.mid button {height:28px;line-height:27px;padding:0 10px}
+.tmp-btn.mid input, .tmp-btn.mid button {height:27px}
+.tmp-btn.mid.type-ico,.tmp-btn.mid.type-ico button {width:28px;height:28px}
+/* 높이값 50 */
+.tmp-btn.big {height:48px}
+.tmp-btn.big a,.tmp-btn.big input,.tmp-btn.big button {height:48px;line-height:46px;padding:0 25px;font-size:18px;font-weight:600}*
+.tmp-btn.big input,.tmp-btn.big button {height:46px}
+.tmp-btn.big.type-ico,.tmp-btn.big.type-ico button {width:48px;height:48px}
+
+/*└ icon set */
+.tmp-btn .tmp-ico {margin-top:-2px}
+.tmp-btn .tmp-ico.left {margin-right:4px;margin-left:-8px}
+.tmp-btn .tmp-ico.right {margin-right:-8px;margin-left:4px}
+.tmp-btn > .tmp-ico {position:absolute;left:10px;top:50%;margin-top:-12px}
+.tmp-btn > .tmp-ico.left {margin-left:0}
+.tmp-btn > .tmp-ico.right {left:auto;right:10px;margin-right:0}
+.tmp-btn > .tmp-ico.left + a, .tmp-btn > .tmp-ico.left + input,.tmp-btn > .tmp-ico.left + button {padding-left:38px}
+.tmp-btn > .tmp-ico.right + a, .tmp-btn > .tmp-ico.right + input, .tmp-btn > .tmp-ico.right + button {padding-right:38px}
+.tmp-btn.mid > .tmp-ico.left {left:4px}
+.tmp-btn.mid > .tmp-ico.right {left:auto;right:4px}
+.tmp-btn.mid > .tmp-ico.left + a, .tmp-btn.mid > .tmp-ico.left + input,.tmp-btn.mid > .tmp-ico.left + button {padding-left:30px}
+.tmp-btn.mid > .tmp-ico.right + a, .tmp-btn.mid > .tmp-ico.right + input, .tmp-btn.mid > .tmp-ico.right + button {padding-right:30px}
+.tmp-btn.big > .tmp-ico.left {left:16px}
+.tmp-btn.big > .tmp-ico.right {left:auto;right:16px}
+.tmp-btn.big > .tmp-ico.left + a, .tmp-btn.big > .tmp-ico.left + input, .tmp-btn.big > .tmp-ico.left + button {padding-left:44px}
+.tmp-btn.big > .tmp-ico.right + a, .tmp-btn.big > .tmp-ico.right + input, .tmp-btn.big > .tmp-ico.right + button {padding-right:44px}
+/*└ icon button */
+.tmp-btn.type-ico > .tmp-ico {left:50%;margin:-12px 0 0 -12px}
+.tmp-btn.type-ico button {top:0;padding:0;margin:0;font:0/1000% m}
+.tmp-btn:hover .tmp-ico {opacity:1}
+
+/*└ Color : 회색 */
+.tmp-btn.gray {border-color:#898b8c;background-color:#8e9091}
+.tmp-btn.gray.over,.tmp-btn.gray:hover {border-color:#717171;background-color:#707070}
+.tmp-btn.gray.active, .tmp-btn.gray:active {background-color:#555;box-shadow:inset 0 1px 3px #444}
+/* 연회색 */
+.tmp-btn.light-gray {background-color:#eee}
+.tmp-btn.light-gray .over,.tmp-btn.light-gray:hover {background-color:#f7f7f7}
+.tmp-btn.light-gray.active, .tmp-btn.light-gray:active {background-color:#eee;box-shadow:inset 0 1px 3px #ccc}
+.tmp-btn.light-gray .over, .tmp-btn.light-gray:hover *, .tmp-btn.light-gray.active, .tmp-btn.light-gray:active {color:#333}
+/* 카키 */
+.tmp-btn.khaki {border-color:#b2a985;background-color:#b2a985}
+.tmp-btn.khaki.over,.tmp-btn.khaki:hover {border-color:#958e71;background-color:#958e71}
+.tmp-btn.khaki.active, .tmp-btn.khaki:active {border-color:#787053;background-color:#787053;box-shadow:inset 0 1px 3px #555}
+/* 녹색 */
+.tmp-btn.green {border-color:#00aebd;background-color:#00aebd}
+.tmp-btn.green.over,.tmp-btn.green:hover {border-color:#00929f;background-color:#00929f}
+.tmp-btn.green.active, .tmp-btn.green:active {background-color:#00aebd;box-shadow:inset 0 1px 3px #017e89}
+/* 라임 */
+.tmp-btn.lime {border-color:#c2d228;background-color:#cbdb2a}
+.tmp-btn.lime.over,.tmp-btn.lime:hover {border-color:#cbdb2a;background-color:#cce733}
+.tmp-btn.lime.active, .tmp-btn.lime:active {background-color:#cedf18;box-shadow:inset 0 1px 3px #b5c603}
+/* 빨강 */
+.tmp-btn.red {border-color:#e62763;background-color:#f22867}
+.tmp-btn.red.over,.tmp-btn.red:hover {border-color:#e62763;background-color:#e01d5b}
+.tmp-btn.red.active, .tmp-btn.red:active {background-color:#fd3a77;box-shadow:inset 0 1px 3px #aa0137}
+.tmp-btn.red *,.tmp-btn.blue *,.tmp-btn.gray *,.tmp-btn.green *,.tmp-btn.khaki * {color:#fff}
+
+/*└ 글라데이션 */
+.gradient {background-image:url(http://image.gsshop.com/mi13/img/btn/bg_gradient.png);background-repeat:repeat-x;background-size:contain}
+.gradient.red,.gradient.green,.gradient.lime,.gradient.gray,.gradient.khaki {background-image:url(http://image.gsshop.com/mi13/img/btn/bg_gradient02.png)}
+
+/* Templete Rounding */
+.round {border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px}
+.round2 {border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}
+.round3 {border-radius:.5em;-moz-border-radius:.5em;-webkit-border-radius:.5em}
+.round4 {border-radius:1em;-moz-border-radius:1em;-webkit-border-radius:1em}
+.round5 {border-radius:2em;-moz-border-radius:2em;-webkit-border-radius:2em}
+
+/* 4. Navigation Style 기본 : lime **********************/
+/*└ Navi st *****************/
+.tmp-nav {height:23px;padding-top:7px;text-align:center;z-index:10}
+.tmp-nav a {display:inline-block;overflow:hidden;padding:3px}
+.tmp-nav a span {display:block;overflow:hidden;width:10px;height:10px;border-radius:15px;background:#e5e5e5;font:0/200% m;vertical-align:top}
+.tmp-nav a.on span {background-color:#cbdb2a}
+.tmp-nav.red a.on span {background:#f22867}
+.tmp-nav.green a.on span {background:#00a4b4}
+
+/*└ Tab st *****************/
+.tmp-tab ul {width:100%;padding-bottom:1px}
+.tmp-tab ul:after {display:block;clear:both;content:''}
+.tmp-tab li {float:left;background-color:#fff}
+.tmp-tab li a, .tmp-tab li .blank {position:relative;display:block;height:38px;line-height:37px;padding:0 10px;margin:0 -1px -1px 0;border:1px solid #d9d9d9;color:#333;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} 
+.tmp-tab li a .cnt {margin-left:6px}
+.tmp-tab li a:focus {text-decoration:none;outline:none}
+.tmp-tab li.on a {border-color:#c2d228;background:#cbdb2a;z-index:10}
+.tmp-tab li.on a:hover, .tmp-tab li.on.over a {border-color:#c2d228}
+.tmp-tab a:hover,.tmp-tab a:focus {text-decoration:none;border-color:#91bb21;background:#fff;color:#333;z-index:11}
+/*└ Type2 */
+.tmp-tab.type2 li a, .tmp-tab.type2 li .blank {background:#f9f9f9}
+.tmp-tab.type2 li.on a {padding-bottom:1px;border-color:#d9d9d9;border-bottom:0 none !important;background:#fff !important}
+.tmp-tab.type2 a:hover,.tmp-tab.type2 a:focus {text-decoration:none;border-color:#c9c9c9;border-bottom-color:#91bb21;background:#fff;color:#333;z-index:1}
+/*└ Type3 */
+.tmp-tab.type3 {overflow:visible;height:40px;border-bottom:1px solid #d9d9d9}
+.tmp-tab.type3 li a, .tmp-tab.type3 li .blank {margin-right:0;border:0 none}
+.tmp-tab.type3 li strong {font-weight:normal}
+.tmp-tab.type3 li.on a {height:38px;border-bottom:3px solid #c2d228;background:none}
+.tmp-tab.type3 li.on strong {font-weight:bold}
+/*└ Type4 */
+.tmp-tab.type4 {height:38px;padding-top:1px;border-bottom:1px solid #91bb21}
+.tmp-tab.type4 li a, .tmp-tab.type4 li .blank {border:0 none;margin:0}
+.tmp-tab.type4 li.on a {padding-bottom:1px;margin:-1px -1px 0;border:1px solid #91bb21;border-bottom:0 none;background:#fff !important;z-index:12}
+/*└ Type5 */
+.tmp-tab.type5 li {width:50%;box-sizing:border-box}
+.tmp-tab.type5 li a, .tmp-tab.type5 li .blank {min-width:0;margin-right:0;border-left:0}
+.tmp-tab.type5 li:nth-child(odd) a {border-left:0 none}
+.tmp-tab.type5 li:nth-child(even) a {border-right:0 none}
+.tmp-tab.type5 li a:hover,.tmp-tab a:focus {border-color:#c9c9c9}
+.tmp-tab.type5 li.on a {background:#fff;border-color:#c9c9c9}
+
+.tmp-tab.type2 li,.tmp-tab.type3 li,.tmp-tab.type4 li,.tmp-tab.type5 li {background:none}
+.tmp-tab.type2 li a:hover,.tmp-tab.type4 li a:hover {background:none}
+
+
+/* 높이값 30 */
+.tmp-tab.mid li a, .tmp-tab.mid li .blank {height:28px;line-height:27px;font-size:13px}
+.tmp-tab.mid.type3 {height:30px}
+.tmp-tab.mid.type3 li.on a {height:28px}
+.tmp-tab.mid.type4 {height:28px;padding-top:1px}
+
+/* 높이값 50 */
+.tmp-tab.big li a, .tmp-tab.h48 li .blank {height:48px;line-height:46px;font-size:16px}
+.tmp-tab.big li .cnt {font-size:13px;color:#444}
+.tmp-tab.big.type3 {height:50px}
+.tmp-tab.big.type3 li.on a {height:48px}
+.tmp-tab.big.type4 {height:48px;padding-top:1px}
+
+
+
+/*└ Color : 녹색 */
+.tmp-tab.green li.on a {border-color:#00aebd;background-color:#00aebd}
+.tmp-tab.green li.on a .cnt {color:#fff}
+.tmp-tab.green li.on a:hover, .tmp-tab.green li.on.over a {border-color:#0094a4}
+.tmp-tab.green li a:hover,.tmp-tab.green li a:focus {border-color:#01aebe}
+/* : 빨강 */
+.tmp-tab.red li.on a {border-color:#f22867;background-color:#f22867}
+.tmp-tab.red li.on a .cnt {color:#fff}
+.tmp-tab.red li.on a:hover, .tmp-tab.red li.on.over a {border-color:#f22867}
+.tmp-tab.red li a:hover,.tmp-tab.red li a:focus {border-color:#f22867}
+.tmp-tab.red.type2 li a, .tmp-tab.red.type2 li .blank {border-bottom-color:#f22867}
+/* : 카키 */
+.tmp-tab.khaki li.on a {border-color:#b2a985;background-color:#b2a985}
+.tmp-tab.khaki li.on a .cnt {color:#fff}
+.tmp-tab.khaki li.on a:hover, .tmp-tab.khaki li.on.over a {border-color:#958e71;background-color:#958e71}
+.tmp-tab.khaki li a:hover,.tmp-tab.khaki li a:focus {border-color:#958e71}
+/* : 회색 */
+.tmp-tab.gray li.on a {border-color:#8e9091;background-color:#8e9091}
+.tmp-tab.gray li.on a .cnt {color:#fff}
+.tmp-tab.gray li.on a:hover, .tmp-tab.gray li.on.over a {border-color:#707070;background-color:#707070}
+.tmp-tab.gray li a:hover,.tmp-tab.gray li a:focus {border-color:#717171}
+
+/*└ Pagination *************/
+.paging {position:relative;padding:2px 0 10px;text-align:center;clear:both;line-height:normal}
+.paging a, .paging strong {display:inline-block;min-width:22px;height:28px;line-height:26px;padding:1px 4px;font-size:14px;color:#888;vertical-align:middle;text-align:center;}
+.paging strong {background:#cbdb2a;color:#333}
+.paging .tmp-btn {position:relative;overflow:hidden;padding:0}
+.paging .tmp-btn .tmp-ico {opacity:0.4}
+.paging a:hover, .paging a:focus {padding:0 3px;border:1px solid #e5e5e5;background-color:#e5e5e5;color:#333;text-decoration:none}
+.paging .tmp-btn:hover, .paging .tmp-btn:focus {padding:0;background-color:#fff} 
+.paging .tmp-btn:hover .tmp-ico {border-color:#c2d228;opacity:1}
+/*└ Color : 녹색 */
+.paging.green strong {background:#00aebd;color:#fff}
+.paging.green a:hover, .paging.green a:focus {border-color:#01aebe}
+/* 빨강 */
+.paging.red strong {background:#f22867;color:#fff}
+.paging.red a:hover, .paging.red a:focus {border-color:#f22867}
+
+/* Control style ******/
+.ctrl-st.tmp-btn {width:auto;min-width:24px;height:44px}
+.ctrl-st.tmp-btn:hover {z-index:10}
+.ctrl-st.tmp-btn .pagination {display:none}
+.ctrl-st.tmp-btn.top, .ctrl-st.tmp-btn.up, .ctrl-st.tmp-btn.down {width:44px;margin-bottom:-1px}
+
+
+/* 5. Layer *******************************************/
+/* Tip Layer 준비중 */
+.tip-arr {display:none;width:19px;height:10px;top:16px;position:absolute;bottom:-2px;left:50%;margin-left:-10px;background:url(http://image.gsshop.com/mi13/img/common/layer_arr_green_top.png) no-repeat;z-index:500}
+.tip-layer {display:none;width:180px;position:absolute;top:25px;left:-86px;padding:15px;border:1px solid #cbdb2a;background:#fff}
+.tip-close {position:absolute;top:2px;right:2px}
+.zoom-tip {position:relative;display:inline-block;width:17px;height:17px;vertical-align:middle;color:#555}
+.zoom-tip .view-tip {display:block;overflow:hidden;width:15px;height:15px;line-height:13px;border:1px solid #c9c9c9;background:#fff;font-weight:normal;font-size:12px;color:#333;text-align:center}
+.zoom-tip .view-tip:hover,.zoom-tip .view-tip:focus {text-decoration:none;background:#f4f4f4}
+.zoom-tip.on {z-index:500}
+.zoom-tip.on .zoom-layer, .zoom-tip.on .tip-arr {display:block}
+.zoom-tip.on .view-tip {border-color:#c2d228;background:#cbdb2a;color:#fff}
+
+
+/* 7. Etc ********************************************/
+/* Loader */
+.tmp-loader {position:relative;width:310px;height:6px;background:#ddd;box-shadow:inset 0 1px 0 #d2d2d2}
+.tmp-loader strong {display:block;height:100%;position:absolute;top:0;left:0;background:#cbdb2a}
+.tmp-loader.img-type {position:relative;width:48px;height:48px;background:url(http://image.gsshop.com/mi13/img/ico/progress_img.png) no-repeat;box-shadow:none}
+.tmp-loader.img-type strong {display:block;height:auto;width:100%;top:auto;bottom:0;background:url(http://image.gsshop.com/mi13/img/ico/progress_img.png) no-repeat left 100%}
+
+
+/* 0. browser Hack **********************************/
+/* IE7 */
+.tmp-ico,.tmp-check,.tmp-radio,.zoom-tip,.tmp-nav a span,.paging a,.paging strong{*display:inline;*zoom:1}
+.tmp-tab ul{*zoom:1}
+.tmp-select.on {*background:url(http://image.gsshop.com/mi13/img/ico/tmp_form_lime.png) repeat-x 0 -240px}
+/* IE8 */
+@media \0screen{}
+/* IE7~8 */
+.tmp-input {line-height:24px \9}
+.tmp-input.mid {line-height:19px \9}
+.tmp-input.big {line-height:33px \9}
+/* IE9~11 */
+@media screen and (min-width:0\0){}
+/* IE10~11 */   
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){} 
+/* Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0){}
+/* Firefox */
+@-moz-document url-prefix(){
+.tmp-input.big {padding-top:5px;padding-bottom:9px}
+.tmp-btn a, .tmp-select .current {top:-1px}
+.tmp-btn input, .tmp-btn button {margin:0 -3px;top:-2px} 
+.tmp-tab li a {line-height:36px}
+}
+
+/* 0. Media Queries *********************************/
+

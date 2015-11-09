@@ -16,8 +16,8 @@ define(['base', 'modules/module_gnb'], function(Base, Gnb){
     var Common = function(){}
     Common.prototype = {
         scroll:function(scrollTop){
-            if(scrollTop > 10) $title.find('h1').addClass('small');
-            else $title.find('h1').removeClass('small');
+            if(scrollTop > 10) $title.find('h1').addClass('header-title');
+            else $title.find('h1').removeClass('header-title');
         },
         resize:function(){
             if(Base.agentChk.getDeviceWidth() < 767) gnb.destroy();

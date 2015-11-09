@@ -1,0 +1,150 @@
+<link rel="stylesheet" type="text/css" href="css/import/tmp_new.css">
+<link rel="stylesheet" type="text/css" href="css/import/default.css">
+<script type="text/javascript" src="/public/src/js/g-ui.js"></script>
+<style type="text/css">
+</style>
+
+
+<h1>UI Component </h1>
+<section>
+	<h2>Input</h2>
+	<p class="txt">Mobile과 PC의 요소는 동일한 규격으로 통일하며, 모든 사이즈는 border값을 포함합니다. <br>
+	Tablet 등의 사용자를 고려하여 PC의 UI요소에 hover action을 제한합니다. 모든 인터렉티브는 Press(tap) 기준으로 이루어집니다.<br>
+	Focus는 따로 정의하지 않으며 시스템 기본 제공을 원칙으로 합니다.<br>
+	가이드는 Rest, Active, Disable 상태를 기준으로 정의합니다.</p>
+	<article>
+		<!-- 기본input -->
+		<div class="cpn-ex">
+			<div class="cpn-tbl">
+				<div class="unit"><strong class="inblock pt13" style="width:70px">기본형 :</strong> <input type="text" class="tmp-input" placeholder="내용을 입력하세요" /></div>
+				<div class="unit"><strong class="inblock pt13" style="width:70px">활성화 :</strong> <input type="text" class="tmp-input focus" value="입력중"  /></div>
+				<div class="unit"><strong class="inblock pt13" style="width:70px">입력불가 :</strong> <input type="text" class="tmp-input disabled" value="입력불가" disabled="disabled" /></div>
+				<div class="unit"><strong class="inblock pt13" style="width:70px">입력오류 :</strong> <input type="text" class="tmp-input error" value="입력오류" /></div>
+			</div>
+		</div>
+<pre class="html">
+
+Default
+<input type="text" class="tmp-input" placeholder="내용을 입력하세요" />  기본 클래스 : tmp-input
+
+Option/Expand
+<input type="text" class="tmp-input focus" placeholder="내용을 입력하세요" /><!-- 클래스 focus 추가 -->
+<input type="text" class="tmp-input disabled" placeholder="Disabled" disabled="disabled" /><!-- 클래스 disabled 추가 -->
+<input type="text" class="tmp-input error" placeholder="Error" /><!-- 클래스 error 추가 -->
+ 
+</pre>
+		<h4>Size Option</h4>
+		<div class="cpn-ex">
+			<div class="cpn-tbl">
+				<div class="unit"><strong class="inblock pt13" style="width:70px">높이값 24 :</strong> <input type="text" class="tmp-input small" placeholder="Class small" style="width:226px" /></div>
+				<div class="unit"><strong class="inblock pt13" style="width:70px">높이값 30 :</strong> <input type="text" class="tmp-input mid" placeholder="Class mid" style="width:220px"/></div>
+				<div class="unit"><strong class="inblock pt13" style="width:70px">높이값 40 :</strong> <input type="text" class="tmp-input" placeholder="Default Size" style="width:220px"/></div>
+				<div class="unit"><strong class="inblock pt13" style="width:70px">높이값 50 :</strong> <input type="text" class="tmp-input big" placeholder="Class big" style="width:220px"/></div>
+			</div>
+		</div>
+		
+<pre class="html">
+
+<input type="text" class="tmp-input small" placeholder="내용을 입력하세요" /><!-- 클래스 small 추가 -->
+<input type="text" class="tmp-input mid" placeholder="내용을 입력하세요" /><!-- 클래스 mid 추가 -->
+<input type="text" class="tmp-input" placeholder="내용을 입력하세요" /><!-- 기본 -->
+<input type="text" class="tmp-input big" placeholder="내용을 입력하세요" /> <!-- 클래스 big 추가 -->
+ 
+</pre>
+		<h4>숫자만 입력</h4>
+		<div class="cpn-ex">
+			<div class="cpn-tbl">
+				<div class="unit"><strong class="inblock pt13" style="width:70px">숫자만 :</strong> <input type="text" class="tmp-input only-num"  value="1560" /></div>
+				<div class="unit"><strong class="inblock pt13" style="width:70px">단위변환 :</strong> <input type="text" class="tmp-input only-price" value="542000" /></div>
+			</div>
+		</div>
+
+<pre class="html">
+
+<input type="text" class="tmp-input only-num"  value="1560" /><!-- 클래스 only-num 추가 -->
+<input type="text" class="tmp-input only-price"  value="542000" /><!-- 클래스 only-price 추가 -->
+ 
+</pre>
+	
+		<!-- 수량변경 -->
+		<h4>수량변경</h4>
+		<div class="cpn-ex">
+			<div class="mobile-nowrap">
+				<span class="tmp-cnt-box mgb10">
+					<input type="text" class="tmp-input mid num-only" value="1" />
+					<a class="tmp-btn type-ico mid plus" href="javascript:;" role="button"><span class="tmp-ico v18">수량 올림</span></a>
+					<a class="tmp-btn type-ico mid minus" href="javascript:;" role="button"><span  class="tmp-ico v17">수량 내림</span></a>
+				</span>
+			</div>
+		</div>
+
+<pre class="html">
+<span class="tmp-cnt-box">
+	<input type="text" class="tmp-input num-only" value="1" />
+	<a class="tmp-btn type-ico plus" href="javascript:;" role="button"><span class="tmp-ico v9">수량 올림</span></a>
+	<a class="tmp-btn type-ico minus" href="javascript:;" role="button"><span  class="tmp-ico v10">수량 내림</span></a>
+</span>
+ 
+</pre>
+		<!-- 조합형 -->
+		<h4>아이콘 조합형</h4>
+		<div class="cpn-ex">
+			<p class="add-option">글자 입력시 지우기 버튼 또는 validation 상태 노출</p>
+			<div class="input-wrap mgb10">
+				<input type="text" class="tmp-input" placeholder="내용을 입력하세요" style="width:260px" value="내용 입력중" />
+				<button class="tmp-ico v19 absolute pos-e del">지우기</button>
+			</div>
+			<div class="input-wrap srch mgb10">
+				<label class="tmp-ico v16 absolute" for="srch">검색</label>
+				<input type="text" id="srch" class="tmp-input pdl30" placeholder="검색어를 입력하세요" value="검색어 입력중" style="width:240px" />
+				<button class="tmp-ico v19 absolute pos-e del">지우기</button>
+			</div>
+		</div>
+
+<pre class="html">
+
+<div class="input-wrap">
+	<input type="text" class="tmp-input" placeholder="내용을 입력하세요"  />
+	<button class="tmp-ico v19 absolute pos-e del">지우기</button>
+</div>
+<div class="input-wrap srch">
+	<label class="tmp-ico v16 absolute" for="srch">검색</label>
+	<input type="text" id="srch" class="tmp-input pdl30" placeholder="검색어를 입력하세요"  />
+	<button class="tmp-ico v19 absolute pos-e del">지우기</button>
+</div>
+ 
+</pre>
+	</article>
+	<article>
+		<h2>Textarea</h2>
+		<!-- Textarea -->
+		<div class="cpn-ex">
+			<div class="textarea mgr10 mgb10" style="display:inline-block;width:400px;">
+				<textarea name="any" id="any" cols="30" rows="4" placeholder="주민번호, 전화번호, 이메일 등의 개인정보를 입력할 경우 타인에 의해 도용될 위험이 있으니 주의해 주세요."></textarea>
+				<div class="relative">
+					<a class="btn-files" href="javascript:;"><i class="tmp-ico v10 left">이미지첨부</i></a>
+					<span class="word-len"><em>0</em>/2000</span>
+				</div>
+			</div>
+
+			<div class="textarea mgb10" style="display:inline-block;width:400px">
+				<textarea name="" id="" cols="30" rows="4">지금 주문하면 금요일 전까지 받을 수 있나요?</textarea>
+				<div class="relative">
+					<a class="btn-files" href="javascript:;"><i class="tmp-ico v10 left">이미지첨부</i></a>
+					<span class="word-len"><em>0</em>/2000</span>
+				</div>
+			</div>
+		</div>
+		<pre class="html">
+
+<div class="textarea">
+	<textarea name="" id="" cols="30" rows="4" placeholder="내용을 입력해주세요."></textarea>
+	<div class="relative">
+		<a class="btn-files" href="javascript:;"><i class="tmp-ico v10 left">이미지첨부</i></a>
+		<span class="word-len"><em>0</em>/2000</span>
+	</div>
+</div>
+ 
+</pre>
+	</article>
+</section>
