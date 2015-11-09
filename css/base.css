@@ -174,12 +174,15 @@ header .head-nav {padding:10px 20px;top:15px;}
 /* component */
 .cpn-ex {padding:20px;background-color:#fff;border:1px solid #ededed;position:relative;z-index:1;}
 .cpn-ex:after {display:block;clear:both;content:""}
+.cpn-ex-img {padding:20px;} 
 
 .design-view {margin-bottom:-12px;position:relative;z-index:2;}
-.design-view span {font-weight:600;color:#555;display:inline-block;background-color:#fff;padding:5px 10px;border:1px solid #ededed;border-bottom-color:#fff;}
+.design-view span {font-weight:bold;color:#555;display:inline-block;background-color:#fff;padding:5px 10px;border:1px solid #ededed;border-bottom-color:#fff;font-size:12px;}
 .add-option {color:#444;font-weight:normal;padding:0 0 5px;margin-bottom:5px;}
 
 .mobile-nowrap {display:inline-block;}
+.unit {margin-bottom:5px;}
+.unit .help-txt {display:inline-block;width:80px;} 
 /*
 .cpn-tbl {display:table;width:100%;text-align:center}
 
