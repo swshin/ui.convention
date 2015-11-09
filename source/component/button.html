@@ -1,116 +1,68 @@
 <link rel="stylesheet" type="text/css" href="css/import/tmp_new.css">
 <link rel="stylesheet" type="text/css" href="css/import/default.css">
 <script type="text/javascript" src="/public/src/js/g-ui.js"></script>
-<style type="text/css">
-</style>
 
-
-<h1>UI Component </h1>
+<h1>UI Component &gt; Button</h1>
 <section>
-	<h2>Button Style</h2>
+	<h2>Overview</h2>
 	<p class="txt">Mobile과 PC의 요소는 동일한 규격으로 통일하며, 모든 사이즈는 border값을 포함합니다. <br>
 	Tablet 등의 사용자를 고려하여 PC의 UI요소에 hover action을 제한합니다. 모든 인터렉티브는 Press(tap) 기준으로 이루어집니다.<br>
 	Focus는 따로 정의하지 않으며 시스템 기본 제공을 원칙으로 합니다.<br>
 	가이드는 Rest, Active, Disable 상태를 기준으로 정의합니다.</p>
-	<article>
-		<div class="cpn-ex">
-			<table id="" class="tmp-tbl">
-				<thead>
-					<tr>
-						<th>Type</th>
-						<th>small</th>
-						<th>mid</th>
-						<th>Default</th>
-						<th>big</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th>A</th>
-						<td><span class="tmp-btn small"><a href="javascript:;">Submit</a></span></td>
-						<td><span class="tmp-btn mid"><a href="javascript:;">Submit</a></span></td>
-						<td><span class="tmp-btn"><a href="javascript:;">Submit</a></span></td>
-						<td><span class="tmp-btn big"><a href="javascript:;">Submit</a></span></td>
-					</tr>
-					<tr>
-						<th>Input</th>
-						<td><span class="tmp-btn small"><input type="submit" value="Submit"></span></td>
-						<td><span class="tmp-btn mid"><input type="submit" value="Submit"></span></td>
-						<td><span class="tmp-btn"><input type="submit" value="Submit"></span></td>
-						<td><span class="tmp-btn big"><input type="submit" value="Submit"></span></td>
-					</tr>
-					<tr>
-						<th>Button</th>
-						<td><span class="tmp-btn small"><button>Submit</button></span></td>
-						<td><span class="tmp-btn mid"><button>Submit</button></span></td>
-						<td><span class="tmp-btn"><button>Submit</button></span></td>
-						<td><span class="tmp-btn big"><button>Submit</button></span></td>
-					</tr>
 
-					<tr class="hide">
-						<th>A</th>
-						<td><span class="tmp-btn small"><i class="tmp-ico v4 left"></i><a href="javascript:;">anchor</a></span></td>
-						<td><span class="tmp-btn mid"><i class="tmp-ico v4 left"></i><a href="javascript:;">바로구매</a></span></td>
-						<td><span class="tmp-btn"><i class="tmp-ico v4 left"></i><a href="javascript:;">바로구매</a></span></td>
-						<td><span class="tmp-btn big"><i class="tmp-ico v4 left"></i><a href="javascript:;">바로구매</a></span></td>
-					</tr>
-					<tr  class="hide">
-						<th>Input</th>
-						<td><span class="tmp-btn small"><i class="tmp-ico v26 left"></i><input type="submit" value="바로구매"></span></td>
-						<td><span class="tmp-btn mid"><i class="tmp-ico v26 left"></i><input type="submit" value="바로구매"></span></td>
-						<td><span class="tmp-btn"><i class="tmp-ico v26 left"></i><input type="submit" value="바로구매"></span></td>
-						<td><span class="tmp-btn big"><i class="tmp-ico v26 left"></i><input type="submit" value="바로구매"></span></td>
-					</tr>
-					<tr  class="hide">
-						<th>Button</th>
-						<td><span class="tmp-btn small"><i class="tmp-ico v4 left"></i><button>바로구매</button></span></td>
-						<td><span class="tmp-btn mid"><i class="tmp-ico v4 left"></i><button>바로구매</button></span></td>
-						<td><span class="tmp-btn"><i class="tmp-ico v4 left"></i><button>바로구매</button></span></td>
-						<td><span class="tmp-btn big"><i class="tmp-ico v4 left"></i><button>바로구매</button></span></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<pre class="html">
-
-Markup
+</section>
+<section>
+	<h2>Normal</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<div class="unit"><strong class="help-txt">Default : </strong><span class="tmp-btn"><a href="javascript:;">Button</a></span></div>
+		<div class="unit"><strong class="help-txt">Small : </strong><span class="tmp-btn small"><a href="javascript:;">Button</a></span></div>
+		<div class="unit"><strong class="help-txt">Mid : </strong><span class="tmp-btn mid"><a href="javascript:;">Button</a></span></div>
+		<div class="unit"><strong class="help-txt">Big : </strong><span class="tmp-btn big"><a href="javascript:;">Button</a></span></div>
+	</div>
+<pre class="html">
+Default * size (default 40)
 <span class="tmp-btn"><a href="#">Anchor</a></span><!-- A Link Type -->
 <span class="tmp-btn"><input type="submit" value="input"></span><!-- Input Type -->
 <span class="tmp-btn"><button>button</button></span><!-- Button Type -->
 
-Option : size ( 24, 30, default 40, 50 : 모든 버튼 요소 동일 ) 
+Option/Expand * size (24, 30, 50) 
 <span class="tmp-btn small">코드생략</span><!-- 클래스 small 추가 -->
 <span class="tmp-btn mid">코드생략</span><!-- 클래스 mid 추가 -->
-<span class="tmp-btn">코드생략</span><!-- Default -->
 <span class="tmp-btn big">코드생략</span><!-- 클래스 big 추가 -->
- 		</pre>
-		
-		<h4>Font Weight</h4>
-		<div class="cpn-ex">
-			<span class="tmp-btn"><a class="bold" href="javascript:;">Anchor</a></span>
-			<span class="tmp-btn"><input class="bold" type="submit" value="input"></span>
-			<span class="tmp-btn"><button class="bold">button</button></span>
-		</div>
-		<pre class="html">
-Option : 폰트굵기 - a, input, button 요소에 클래스 bold 추가 
+</pre>
+</section>
+
+<section>
+	<h2>Font Weight</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<span class="tmp-btn"><a class="bold" href="javascript:;">Anchor</a></span>
+		<span class="tmp-btn"><input class="bold" type="submit" value="input"></span>
+		<span class="tmp-btn"><button class="bold">button</button></span>
+	</div>
+<pre class="html">
+Default * a, input, button 요소에 클래스 bold 추가 
 <span class="tmp-btn"><a class="bold" href="#">Anchor</a></span>
 <span class="tmp-btn"><input class="bold" type="submit" value="input"></span>
 <span class="tmp-btn"><button class="bold">button</button></span> 
-		</pre>
+</pre>
 
-		<h4>Color Option</h4>
-		<div class="cpn-ex">
-			<span class="tmp-btn"><a class="bold" href="javascript:;">장바구니</a></span>
-			<span class="tmp-btn light-gray"><a class="bold" href="javascript:;">장바구니</a></span>
-			<span class="tmp-btn gray"><a class="bold" href="javascript:;">장바구니</a></span>
-			<span class="tmp-btn lime"><a class="bold" href="javascript:;">장바구니</a></span>
-			<span class="tmp-btn green"><a class="bold" href="javascript:;">장바구니</a></span>
-			<span class="tmp-btn khaki"><a class="bold" href="javascript:;">장바구니</a></span>
-			<span class="tmp-btn red"><a class="bold" href="javascript:;">장바구니</a></span>
+<section>
+	<h2>Button Color</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<span class="tmp-btn"><a class="bold" href="javascript:;">장바구니</a></span>
+		<span class="tmp-btn light-gray"><a class="bold" href="javascript:;">장바구니</a></span>
+		<span class="tmp-btn gray"><a class="bold" href="javascript:;">장바구니</a></span>
+		<span class="tmp-btn lime"><a class="bold" href="javascript:;">장바구니</a></span>
+		<span class="tmp-btn green"><a class="bold" href="javascript:;">장바구니</a></span>
+		<span class="tmp-btn khaki"><a class="bold" href="javascript:;">장바구니</a></span>
+		<span class="tmp-btn red"><a class="bold" href="javascript:;">장바구니</a></span>
 
-		</div>
-		<pre class="html">
-Option : Color (모든 Type 동일)
+	</div>
+<pre class="html">
+Default
 <span class="tmp-btn"><button>button</button></span>
 <span class="tmp-btn light-gray"><button>button</button></span>
 <span class="tmp-btn gray"><button>button</button></span>
@@ -118,85 +70,97 @@ Option : Color (모든 Type 동일)
 <span class="tmp-btn green"><button>button</button></span>
 <span class="tmp-btn khaki"><button>button</button></span>
 <span class="tmp-btn red"><button>button</button></span>
-		</pre>
 
-		<h4>아이콘 조합</h4>
-		<div class="cpn-ex">
-			<div class="inblock">왼쪽
-				<span class="tmp-btn"><i class="tmp-ico v4 left"></i><a class="bold" href="javascript:;">Anchor</a></span>
-				<span class="tmp-btn"><i class="tmp-ico v4 left"></i><input class="bold" type="submit" value="input"></span>
-				<span class="tmp-btn"><i class="tmp-ico v4 left"></i><button class="bold">button</button></span>
-			</div>
-			<div class="inblock">오른쪽
-				<span class="tmp-btn"><i class="tmp-ico v3 right"></i><a class="bold" href="javascript:;">Anchor</a></span>
-				<span class="tmp-btn"><i class="tmp-ico v5 right"></i><input class="bold" type="submit" value="input"></span>
-				<span class="tmp-btn"><i class="tmp-ico v6 right"></i><button class="bold">button</button></span>
-			</div>
+</pre>
+</section>
+
+<section>
+	<h2>Icon Button Type1</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<div class="unit"><strong class="help-txt">Left Icon : </strong>
+			<span class="tmp-btn"><i class="tmp-ico v4 left"></i><a class="bold" href="javascript:;">Anchor</a></span>
+			<span class="tmp-btn"><i class="tmp-ico v4 left"></i><input class="bold" type="submit" value="input"></span>
+			<span class="tmp-btn"><i class="tmp-ico v4 left"></i><button class="bold">button</button></span>
 		</div>
-		<pre class="html">
-Option : 아이콘 요소 위치 클래스 ( left, right ) 
+		<div class="unit"><strong class="help-txt">Right Icon : </strong>
+			<span class="tmp-btn"><i class="tmp-ico v3 right"></i><a class="bold" href="javascript:;">Anchor</a></span>
+			<span class="tmp-btn"><i class="tmp-ico v5 right"></i><input class="bold" type="submit" value="input"></span>
+			<span class="tmp-btn"><i class="tmp-ico v6 right"></i><button class="bold">button</button></span>
+		</div>
+	</div>
+<pre class="html">
+Default
 <span class="tmp-btn"><i class="tmp-ico v4 left"></i><a href="#">Anchor</a></span><!-- tmp-ico에 클래스 left 추가 -->
 <span class="tmp-btn"><i class="tmp-ico v5 right"></i><button>Button</button></span><!-- tmp-ico에 클래스 right 추가 -->
-		</pre>
+</pre>
+</section>
 
-		<h4>Icon Button</h4>
-		<div class="cpn-ex">
-			<span class="tmp-btn type-ico"><i class="tmp-ico v1"></i><button>아이콘 버튼</button></span>
-			<span class="tmp-btn type-ico"><i class="tmp-ico v2"></i><button>아이콘 버튼</button></span>
-			<span class="tmp-btn type-ico"><i class="tmp-ico v3"></i><button>아이콘 버튼</button></span>
-			<span class="tmp-btn type-ico"><i class="tmp-ico v4"></i><button>아이콘 버튼</button></span>
-			<span class="tmp-btn type-ico"><i class="tmp-ico v5"></i><button>아이콘 버튼</button></span>
-			<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v6">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v7">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v31">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v32">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v40">아이콘 버튼</i></a>
-		</div>
-		<pre class="html">
-Markup : 아이콘 버튼 클래스 type-ico 추가
+<section>
+	<h2>Icon Button Type2</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<span class="tmp-btn type-ico"><i class="tmp-ico v1"></i><button>아이콘 버튼</button></span>
+		<span class="tmp-btn type-ico"><i class="tmp-ico v2"></i><button>아이콘 버튼</button></span>
+		<span class="tmp-btn type-ico"><i class="tmp-ico v3"></i><button>아이콘 버튼</button></span>
+		<span class="tmp-btn type-ico"><i class="tmp-ico v4"></i><button>아이콘 버튼</button></span>
+		<span class="tmp-btn type-ico"><i class="tmp-ico v5"></i><button>아이콘 버튼</button></span>
+		<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v6">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v7">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v31">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v32">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v40">아이콘 버튼</i></a>
+	</div>
+<pre class="html">
+Default
 <span class="tmp-btn type-ico"><i class="tmp-ico v1"></i><button>아이콘 버튼</button></span>
 <a class="tmp-btn type-ico" role="button" href="javascript:;"><i class="tmp-ico v6">아이콘 버튼</i></a><!-- anchor일 경우 -->
-		</pre>
+</pre>
+</section>
 
-		<h4>Rounding Option</h4>
-		<div class="cpn-ex">
-			<span class="tmp-btn round"><a class="bold" href="javascript:;">Anchor</a></span>
-			<span class="tmp-btn round2"><input class="bold" type="submit" value="input"></span>
-			<span class="tmp-btn round3"><button class="bold">button</button></span>
-			<span class="tmp-btn round4"><button class="bold">button</button></span>
-			<span class="tmp-btn round5"><button class="bold">button</button></span>
-			<a class="tmp-btn type-ico round" role="button" href="javascript:;"><i class="tmp-ico v6">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico round2" role="button" href="javascript:;"><i class="tmp-ico v7">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico round3" role="button" href="javascript:;"><i class="tmp-ico v31">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico round4" role="button" href="javascript:;"><i class="tmp-ico v32">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico round5" role="button" href="javascript:;"><i class="tmp-ico v40">아이콘 버튼</i></a>
-		</div>
-		<pre class="html">
-Option : Round  
+<section>
+	<h2>Round</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<span class="tmp-btn round"><a class="bold" href="javascript:;">Anchor</a></span>
+		<span class="tmp-btn round2"><input class="bold" type="submit" value="input"></span>
+		<span class="tmp-btn round3"><button class="bold">button</button></span>
+		<span class="tmp-btn round4"><button class="bold">button</button></span>
+		<span class="tmp-btn round5"><button class="bold">button</button></span>
+		<a class="tmp-btn type-ico round" role="button" href="javascript:;"><i class="tmp-ico v6">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico round2" role="button" href="javascript:;"><i class="tmp-ico v7">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico round3" role="button" href="javascript:;"><i class="tmp-ico v31">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico round4" role="button" href="javascript:;"><i class="tmp-ico v32">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico round5" role="button" href="javascript:;"><i class="tmp-ico v40">아이콘 버튼</i></a>
+	</div>
+<pre class="html">
+Default
 <span class="tmp-btn round"><button>button</button></span><!-- 클래스 round 추가 -->
 <span class="tmp-btn round2"><button>button</button></span><!-- 클래스 round2 추가 -->
 <span class="tmp-btn round3"><button>button</button></span><!-- 클래스 round3 추가 -->
 <span class="tmp-btn round4"><button>button</button></span><!-- 클래스 round4 추가 -->
 <span class="tmp-btn round5"><button>button</button></span><!-- 클래스 round5 추가 -->
-		</pre>
+</pre>
+</section>
 
-		<h4>Gradient Option</h4>
-		<div class="cpn-ex">
-			<span class="tmp-btn round2 gradient"><button class="bold">Button</button></span>
-			<span class="tmp-btn round2 gradient light-gray"><button class="bold">Button</button></span>
-			<span class="tmp-btn round2 gradient gray"><button class="bold">Button</button></span>
-			<span class="tmp-btn round2 gradient lime"><button class="bold">Button</button></span>
-			<span class="tmp-btn round2 gradient green"><button class="bold">Button</button></span>			
-			<span class="tmp-btn round2 gradient khaki"><button class="bold">Button</button></span>
-			<span class="tmp-btn round2 gradient red"><button class="bold">Button</button></span>
-			<a class="tmp-btn type-ico round2 gradient" role="button" href="javascript:;"><i class="tmp-ico v31">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico round2 gradient" role="button" href="javascript:;"><i class="tmp-ico v32">아이콘 버튼</i></a>
-			<a class="tmp-btn type-ico round2 gradient " role="button" href="javascript:;"><i class="tmp-ico v40">아이콘 버튼</i></a>
-			
-		</div>
-		<pre class="html">
-Option : Gradient  
+<section>
+	<h2>Gradient</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<span class="tmp-btn round2 gradient"><button class="bold">Button</button></span>
+		<span class="tmp-btn round2 gradient light-gray"><button class="bold">Button</button></span>
+		<span class="tmp-btn round2 gradient gray"><button class="bold">Button</button></span>
+		<span class="tmp-btn round2 gradient lime"><button class="bold">Button</button></span>
+		<span class="tmp-btn round2 gradient green"><button class="bold">Button</button></span>			
+		<span class="tmp-btn round2 gradient khaki"><button class="bold">Button</button></span>
+		<span class="tmp-btn round2 gradient red"><button class="bold">Button</button></span>
+		<a class="tmp-btn type-ico round2 gradient" role="button" href="javascript:;"><i class="tmp-ico v31">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico round2 gradient" role="button" href="javascript:;"><i class="tmp-ico v32">아이콘 버튼</i></a>
+		<a class="tmp-btn type-ico round2 gradient " role="button" href="javascript:;"><i class="tmp-ico v40">아이콘 버튼</i></a>
+		
+	</div>
+<pre class="html">
+Default
 <span class="tmp-btn gradient"><button>button</button></span><!-- 클래스 gradient 추가 -->
-		</pre>
-	</article>
+</pre>
 </section>
