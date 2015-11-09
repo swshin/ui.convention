@@ -96,11 +96,11 @@ define(['base'], function(Base){
 			if($param){
 				_that.setTransition(0, 0.5);
 	        	_that.setDimTransition(true);
-	        	$('header').addClass('ov-menu');
+	        	//$('header').addClass('ov-menu');
 			}else{
 				_that.setTransition(-100, 0.5);
 	        	_that.setDimTransition(false);
-	        	$('header').removeClass('ov-menu');
+	        	//$('header').removeClass('ov-menu');
 			}
 		},
 		setTransition:function(posX, fps){
@@ -135,7 +135,7 @@ define(['base'], function(Base){
 			if(_that.evtTarget.attr('style')){
 				_that.evtTarget.removeAttr('style');
 				_that.setDimTransition(false);
-				$('header').removeClass('ov-menu');
+				//$('header').removeClass('ov-menu');
 			}
 		}
 	}

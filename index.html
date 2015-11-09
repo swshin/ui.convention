@@ -8,69 +8,95 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.snippet.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
     
 <body>
 	<header>
-		<div class="wrap">
-			<h1><a href="#/html/convention">GSSHOP UI CONVENTION<!-- <small><span class="for">for</span> GS SH<em>O</em>P IT GROUP</small> --></a></h1>
-			<nav class="head-nav">
-				<span class="ico-cate" data-type="btn" data-setup="{'evtType':'click', 'actClass':'active', 'evtTarget':'gnb', 'closeTarget':'dim'}"></span>
-			</nav>
-		</div>
+		<span class="ico-cate" data-type="btn" data-setup="{'evtType':'click', 'actClass':'active', 'evtTarget':'gnb', 'closeTarget':'dim'}"></span>
 	</header>
 	<div class="container">
-		<div class="left-nav">
-			<ul class="menu" data-type="gnb">
-				<li><span class="menu-title">UI CONVENTION</span></li>
-				<li><a href="#/html/convention">Overview</a></li>
-				<li><a href="#/html/principles">HTML Principles</a></li>
-				<li><a href="#/css/index">CSS Guide</a></li>
-				<li><a href="#/html/imagenaming">Images Guide</a></li>
-				<li>
-					<a href="#/html/layout">Templates</a>
-					<div class="menu-sub">
-						<div class="wrap">
-							<a href="#/html/layout">Layout Templates</a>
-							<a href="#/html/product">Product Templates</a>
-							<a href="#/html/eventtemplate">Event Templates</a>
-						</div>
+		<div id="side-nav" data-type="gnb">
+			<div class="side-nav-wrap">
+				<h1><a href="#/html/convention">GSSHOP UI CONVENTION</a></h1>
+				<div class="left-nav">
+					<ul class="menu">
+						<!-- <li><span class="menu-title">UI CONVENTION</span></li> -->
+						<li><a href="#/html/convention">Overview</a></li>
+						<li><a href="#/html/principles">HTML Principles</a></li>
+						<li><a href="#/css/index">CSS Guide</a></li>
+						<li><a href="#/html/imagenaming">Images Guide</a></li>
+						<li>
+							<a href="#/html/layout">Templates</a>
+							<div class="menu-sub">
+								<div class="wrap">
+									<a href="#/html/layout">Layout Templates</a>
+									<a href="#/html/product">Product Templates</a>
+									<a href="#/html/eventtemplate">Event Templates</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#/js/jsconvention">JavaScript</a>
+							<div class="menu-sub">
+								<div class="wrap">
+									<a href="#/js/jsconvention">JS Convention</a>
+									<a href="#/js/gsshop">JS for GS SHOP</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#/component/uikit">UI Components</a>
+							<!-- <div class="menu-sub">
+								<div class="wrap">
+									<a href="#/component/icon">Icons</a>
+									<a href="#/component/button">Button</a>
+									<a href="#/component/input">Input & Textarea</a>
+									<a href="#/component/checkbox">Checkbox & Radio</a>
+									<a href="#/component/combo">Combo box</a>
+									<a href="#/component/tab">Tabs</a>
+									<a href="#/component/indicator">Indicator</a>
+									<a href="#/component/loader">Loader</a>
+									<a href="#/component/uikit">UI Kit</a>
+								</div>
+							</div> -->
+						</li>
+						<li>
+							<a>Design Guide</a>
+							<div class="menu-sub">
+								<div class="wrap">
+									<a href="#/design/icons">Icon</a>
+									<a href="#/design/color">Color/Font</a>
+									<a href="#/design/prd">Producr Image</a>
+									<a href="#/design/theme">Theme Banner</a>
+									<a href="#/design/promotion">Promotion Banner</a>
+									<a href="#/design/brand">Brand Banner</a>
+									<a href="#/design/etc">Etc Banner</a>
+									<a href="#/design/detail">Product Detail</a>
+								</div>
+							</div>
+						</li>
+						<li class="dotted"><a href="#/markdown/markdown">Code Formatting</a></li>
+						<li><a href="#/markdown/wag">WAG</a></li>
+						<li><a href="#/html/epilogue">Epilogue</a></li>
+					</ul>
+				</div>
+				<div class="legal">
+					<div class="foot-link">
+						<a href="http://gsshop.com" target="_blank" class="gsshop"><img src="http://image.gsshop.com/planprd/banner_MAINCORNER/25950314_01.gif" alt="GS SHOP"></a>
 					</div>
-				</li>
-				<li>
-					<a href="#/js/jsconvention">JavaScript</a>
-					<div class="menu-sub">
-						<div class="wrap">
-							<a href="#/js/jsconvention">JS Convention</a>
-							<a href="#/js/gsshop">JS for GS SHOP</a>
-						</div>
-					</div>
-				</li>
-				<li><a href="#/component/component">UI Components</a></li>
-				<li class="dotted"><a href="#/markdown/markdown">Code Formatting</a></li>
-				<li><a href="#/markdown/wag">WAG</a></li>
-				<li><a href="#/html/epilogue">Epilogue</a></li>
-			</ul>
+					<p class="copyright">Copyright(C) 1998-2015 GS HOMESHOPPING. All Rights Reserved.</p>
+					<p><a href="https://disqus.com" target="_blank">DISQUS</a></p>
+				</div>
+			</div>
 		</div>
 		<div class="wrap">
 			<div class="contents"></div>
 			<div id="disqus_thread"></div>
 		</div>
 	</div>
-	<footer>
-		<div class="wrap">
-			<div class="foot-link">
-				<a href="http://gsshop.com" target="_blank" class="gsshop"><img src="http://image.gsshop.com/planprd/banner_MAINCORNER/25950314_01.gif" alt="GS SHOP"></a>
-				<!--
-				<a href="https://github.com" target="_blank" class="github"><img src="https://help.github.com/assets/images/site/logo.png" alt="GitHub"></a>
-				<a href="https://disqus.com" target="_blank" class="disqus"><img src="//a.disquscdn.com/dotcom/d-9c2c241/img/brand/disqus-logo-blue-white.svg" alt="DISQUS"></a>
-				-->
-			</div>
-			<p class="copyright">Copyright(C) 1998-2015 GS HOMESHOPPING. All Rights Reserved.</p>
-			<p><a href="https://disqus.com" target="_blank">DISQUS</a></p>
-		</div>
-	</footer>
+	<footer><!-- footer --></footer>
 	<div class="dim" data-type="dim"></div>
 
 <!-- google analytics code -->

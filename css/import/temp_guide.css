@@ -1,13 +1,10 @@
 @charset "utf-8"; 
-/* Reset *********************************************************/ 
-html, body { height: 100%; color: #666; margin:0 0 0 0; padding:0 0 0 0; }
-a { color: #666 }
-a:hover { color: #00838f }
-br { letter-spacing: 0 !important }
-img { border:0;}
+/*
+temp guide css
+*/
+
 /* display:none;  */
 .disNone {display:none; height:0 !important; padding:0 !important; line-height:0 !important;}
-
 
 /* ditto에서 공통으로 쓰는 페이지 필요로 인한 css  추가 */
 .hide {position:absolute !important; left:-9999px !important; top:-9999px !important; display: inline-block; overflow:hidden; visibility:hidden; width:0 !important; height:0 !important; padding:0 !important; font-size:0 !important; color:rgba(255,255,255,0); text-indent:-999em;}

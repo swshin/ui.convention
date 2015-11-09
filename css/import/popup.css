@@ -1,4 +1,7 @@
 @charset "utf-8";
+/*
+팝업 기본 템플릿
+*/
 #pop_wrap .hide {position:absolute !important;overflow:hidden !important;visibility:hidden;width:0 !important;height:0 !important;font:0/0 m !important}
 #pop_wrap .fl_left { float: left }
 #pop_wrap .fl_right { float: right }
