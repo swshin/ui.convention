@@ -6,8 +6,8 @@
 	.side-nav-wrap {z-index:51;}
 
 	.ico-cate {display:block;position:absolute;z-index:10;top:10px;left:10px;cursor:pointer;}
-	.contents h1 {padding:20px 0 0 10px;left:0;top:0;right:0;}
-	.contents .header-title {position:fixed;top:0;right:0;left:0;z-index:2;padding:0 0 0 50px;height:45px;line-height:40px;}
+	.contents h1 {padding:30px 0 10px 10px;left:0;top:0;right:0;font-size:30px;height:auto;line-height:40px;}
+	.contents h1.header-title {position:fixed;top:0;right:0;left:0;padding:0 0 0 50px;height:45px;line-height:40px;font-size:20px;}
 	section {margin-top:30px;}
 	section h2 {font-size:20px;line-height:1.3em;}
 	h3 {font-size:16px;}
@@ -90,7 +90,8 @@
 	body, header {min-width:300px;overflow-x:hidden}
 	#side-nav {display:none;}
 	.ico-cate {display:block;position:absolute;z-index:10;top:10px;left:10px;cursor:pointer;}
-	.contents h1 {padding-left:10px;padding-top:20px;}
+	.contents h1 {padding:30px 0 10px 10px;font-size:30px;height:auto;line-height:40px;}
+	.contents h1.header-title {font-size:15px;line-height:45px;padding:0 0 0 45px;height:45px;}
 
 	section {margin-top:30px;}
 	section h2 {font-size:20px;line-height:1.3em;}
