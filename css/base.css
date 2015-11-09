@@ -54,9 +54,9 @@ section {margin-top:50px;font-size:13px;color:#666;}
 .ico-cate:before{content:''; height:3px; width:20px; background:#fff; display:block; position:absolute; top:5px; left:3px; box-shadow:0 6px 0 #fff, 0 12px 0 #fff;-webkit-box-shadow:0 6px 0 #fff, 0 12px 0 #fff;-moz-box-shadow:0 6px 0 #fff, 0 12px 0 #fff;}
 
 /* title */
-.contents h1 {overflow:hidden;position:fixed;left:240px;top:0;width:100%;height:100px;background:#cbdb2a;color:#fff;font-size:38px;line-height:100px;font-weight:normal;z-index:3;}
+.contents h1 {overflow:hidden;position:fixed;left:240px;top:0;width:100%;height:100px;padding-left:50px;background:#cbdb2a;color:#fff;font-size:38px;line-height:100px;font-weight:normal;z-index:3;}
 
-.contents h1.header-title {font-size:18px;}
+.contents h1.header-title {font-size:26px;}
 .contents h1 strong {font-weight:normal;}
 .contents h1.header-title strong {display:inline;}
 
@@ -69,10 +69,9 @@ h2+h3 {padding-top:0;}
 
 /* code setting */
 /* pre */
-pre {position:relative;margin:10px 0;padding:0;line-height:20px;white-space:pre-line;font-family:Consolas,Inconsolata-g,'Dejavu Sans Mono','Malgun Gothic';font-size:1.1em;}
+pre {position:relative;padding:0;line-height:20px;white-space:pre-line;font-family:Consolas,Inconsolata-g,'Dejavu Sans Mono','Malgun Gothic';font-size:1.1em;}
 pre ol {border-left:50px solid #606060;padding:10px 0;background:#272822;}
 pre ol li {padding:0 10px;list-style:decimal-leading-zero outside none;color:#f8f8f2;background-color:#272822;}
-.snippet-wrap .snippet-menu, .snippet-wrap .snippet-hide {top:0 !important;}
 .snippet-wrap pre.snippet-textonly {padding:0 10px !important;line-height:24px;color:#000;border:1px solid #BBD0DE;background:url('../img/k_pre.gif') repeat;}
 .snippet-wrap .snippet-menu a, .snippet-wrap .snippet-hide a {margin-left:5px;color:#ccc;text-decoration:none !important;/*background:#272822;border:1px solid #000;border-radius:10px;*/text-transform:uppercase;}
 /*.pre-idx {display:block;margin-top:20px;font-weight:bold}*/
@@ -120,6 +119,7 @@ table td {padding:1% 2%;border:1px solid #e1e3e6;background:#fff;}
 .flex-table.wag .tbl-header .tbl-cell+.tbl-cell+.tbl-cell{text-align:center;}
 
 /* description */
+.snippet-container {margin:10px 0;}
 .exbox {padding:10px;background:#fff;border:1px solid #ccc;font-family:Consolas,Inconsolata-g,'Dejavu Sans Mono','Malgun Gothic';font-size:1.2em;}
 .desc-list {padding-bottom:25px;font-size:13px;}
 .desc-list dt {font-weight:bold;padding:0;font-size:14px;}
@@ -175,8 +175,8 @@ header .head-nav {padding:10px 20px;top:15px;}
 .cpn-ex {padding:20px;background-color:#fff;border:1px solid #ededed;position:relative;z-index:1;}
 .cpn-ex:after {display:block;clear:both;content:""}
 
-.design-view {margin-bottom:-12px;position:relative;z-index:2;}
-.design-view span {font-weight:600;color:#555;display:inline-block;background-color:#fff;padding:5px 10px;border:1px solid #ededed;border-bottom-color:#fff;}
+.design-view {margin-bottom:-12px;position:relative;z-index:2;font-size:12px;}
+.design-view span {font-weight:bold;color:#555;display:inline-block;background-color:#fff;padding:5px 15px;border:1px solid #ededed;border-bottom-color:#fff;}
 .add-option {color:#444;font-weight:normal;padding:0 0 5px;margin-bottom:5px;}
 
 .mobile-nowrap {display:inline-block;}
