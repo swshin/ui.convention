@@ -1,157 +1,156 @@
 <link rel="stylesheet" type="text/css" href="css/import/tmp_new.css">
 <link rel="stylesheet" type="text/css" href="css/import/default.css">
 <script type="text/javascript" src="/public/src/js/g-ui.js"></script>
-<style type="text/css">
-</style>
 
 
-<h1>UI Component </h1>
+<h1>UI Component &gt; Checkbox &amp; Radio</h1>
 <section>
-	<h2>Checkbox</h2>
+	<h2>Overview</h2>
 	<p class="txt">Mobile과 PC의 요소는 동일한 규격으로 통일하며, 모든 사이즈는 border값을 포함합니다. <br>
 	Tablet 등의 사용자를 고려하여 PC의 UI요소에 hover action을 제한합니다. 모든 인터렉티브는 Press(tap) 기준으로 이루어집니다.<br>
 	Focus는 따로 PC에서만 정의되며 시스템 기본 제공을 원칙으로 합니다.<br>
 	가이드는 Rest, Hover, Active, Disable 상태를 기준으로 정의합니다.</p>
-	<article>
-		<!-- 기본input -->
-		<div class="cpn-ex">
-			<div class="float">
-				<h3>Default</h3>
-				<div class="tmp-check mgb10">
-					<input type="checkbox" name="a1" id="a1" value="" />
-					<label for="a1"><i></i>Rest State</label>
-				</div>
-				<br>
-				<div class="tmp-check over mgb10">
-					<input type="checkbox" name="a2" id="a2" value="" />
-					<label for="a2"><i></i>Hover</label>
-				</div>
-				<br>
-				<div class="tmp-check checked mgb10">
-					<input type="checkbox" name="a3" id="a3" value="" checked="checked"/>
-					<label for="a3"><i></i>checked</label>
-				</div>
-				<br>
-				<div class="tmp-check disabled mgb10">
-					<input type="checkbox" name="a" id="a" value="" disabled="disabled" />
-					<label for="a"><i></i>Disabled</label>
-				</div>
-			</div>
+</section>
+
+<section>
+	<h2>Checkbox</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<div class="unit">
+			<strong class="help-txt">Default : </strong>
 			
-			<div class="float">
-				<h3>Type Small</h3>
-				<div class="tmp-check type2 mgb10">
-					<input type="checkbox" name="aa1" id="aa1" value="" />
-					<label for="aa1"><i></i>Rest State</label>
-				</div>
-				<br>
-				<div class="tmp-check type2 over mgb10">
-					<input type="checkbox" name="aa2" id="aa2" value="" />
-					<label for="aa2"><i></i>Hover</label>
-				</div>
-				<br>
-				<div class="tmp-check type2 checked mgb10">
-					<input type="checkbox" name="aa3" id="aa3" value="" checked="checked"/>
-					<label for="aa3"><i></i>checked</label>
-				</div>
-				<br>
-				<div class="tmp-check type2 disabled mgb10">
-					<input type="checkbox" name="aa" id="aa" value="" disabled="disabled" />
-					<label for="aa"><i></i>Disabled</label>
-				</div>
+			<div class="tmp-check ">
+				<input type="checkbox" name="a1" id="a1" value="" />
+				<label for="a1"><i></i>Rest State</label>
+			</div>
+
+			<div class="tmp-check over">
+				<input type="checkbox" name="a2" id="a2" value="" />
+				<label for="a2"><i></i>Hover</label>
+			</div>
+
+			<div class="tmp-check checked">
+				<input type="checkbox" name="a3" id="a3" value="" checked="checked"/>
+				<label for="a3"><i></i>checked</label>
+			</div>
+
+			<div class="tmp-check disabled">
+				<input type="checkbox" name="a" id="a" value="" disabled="disabled" />
+				<label for="a"><i></i>Disabled</label>
 			</div>
 		</div>
-		<pre class="html">
+		
+		<div class="unit">
+			<strong class="help-txt">Small : </strong>
+			<div class="tmp-check type2">
+				<input type="checkbox" name="aa1" id="aa1" value="" />
+				<label for="aa1"><i></i>Rest State</label>
+			</div>
 
-기본 클래스 : tmp-check
+			<div class="tmp-check type2 over">
+				<input type="checkbox" name="aa2" id="aa2" value="" />
+				<label for="aa2"><i></i>Hover</label>
+			</div>
+
+			<div class="tmp-check type2 checked">
+				<input type="checkbox" name="aa3" id="aa3" value="" checked="checked"/>
+				<label for="aa3"><i></i>checked</label>
+			</div>
+
+			<div class="tmp-check type2 disabled">
+				<input type="checkbox" name="aa" id="aa" value="" disabled="disabled" />
+				<label for="aa"><i></i>Disabled</label>
+			</div>
+		</div>
+	</div>
+<pre class="html">
+
+Default
 <div class="tmp-check"> 
 	<input type="checkbox" name="a1" id="a1" value="옵션값" />
 	<label for="a1"><i></i>옵션명</label>
 </div>
 
-Type Small : 클래스 type2 추가
+Option/Expand
 <div class="tmp-check type"> 
 	<input type="checkbox" name="a2" id="a2" value="옵션값" />
 	<label for="a1"><i></i>옵션명</label>
 </div>
 
-State Class
 <div class="tmp-check over">내용생략</div><!-- 마우스 오버시 -->
 <div class="tmp-check checked">내용생략</div><!-- 선택시 -->
 <div class="tmp-check disabled">내용생략</div><!-- 비활성 -->
 		</pre>
-	</article>
+
 </section>
 
 <section>
-	<h2>Radio Button</h2>
-	<article>
-		<!-- 기본input -->
-		<div class="cpn-ex">
-			<div class="float">
-				<h3>Default</h3>
-				<div class="tmp-radio mgb10">
-					<input type="radio" name="bio" id="b1" value="" />
-					<label for="b1"><i></i>Rest State</label>
-				</div>
-				<br>
-				<div class="tmp-radio over mgb10">
-					<input type="radio" name="bio" id="b2" value="" />
-					<label for="b2"><i></i>Hover</label>
-				</div>
-				<br>
-				<div class="tmp-radio checked mgb10">
-					<input type="radio" name="bio" id="b3" value="" checked="checked"/>
-					<label for="b3"><i></i>checked</label>
-				</div>
-				<br>
-				<div class="tmp-radio disabled mgb10">
-					<input type="radio" name="bio" id="b" value="" disabled="disabled" />
-					<label for="b"><i></i>Disabled</label>
-				</div>
+	<h2>Radio</h2>
+
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<div class="unit">
+			<strong class="help-txt">Default : </strong>
+			<div class="tmp-radio">
+				<input type="radio" name="bio" id="b1" value="" />
+				<label for="b1"><i></i>Rest State</label>
 			</div>
-			
-			<div class="float">
-				<h3>Type Small</h3>
-				<div class="tmp-radio type2 mgb10">
-					<input type="radio" name="bio2" id="bb1" value="" />
-					<label for="bb1"><i></i>Rest State</label>
-				</div>
-				<br>
-				<div class="tmp-radio type2 over mgb10">
-					<input type="radio" name="bio2" id="bb2" value="" />
-					<label for="bb2"><i></i>Hover</label>
-				</div>
-				<br>
-				<div class="tmp-radio type2 checked mgb10">
-					<input type="radio" name="bio2" id="bb3" value="" checked="checked"/>
-					<label for="bb3"><i></i>checked</label>
-				</div>
-				<br>
-				<div class="tmp-radio type2 disabled mgb10">
-					<input type="radio" name="bio2" id="bb" value="" disabled="disabled" />
-					<label for="bb"><i></i>Disabled</label>
-				</div>
+
+			<div class="tmp-radio over">
+				<input type="radio" name="bio" id="b2" value="" />
+				<label for="b2"><i></i>Hover</label>
+			</div>
+
+			<div class="tmp-radio checked">
+				<input type="radio" name="bio" id="b3" value="" checked="checked"/>
+				<label for="b3"><i></i>checked</label>
+			</div>
+
+			<div class="tmp-radio disabled">
+				<input type="radio" name="bio" id="b" value="" disabled="disabled" />
+				<label for="b"><i></i>Disabled</label>
 			</div>
 		</div>
-		<pre class="html">
+		
+		<div class="unit">
+			<strong class="help-txt">Small : </strong>
+			<div class="tmp-radio type2">
+				<input type="radio" name="bio2" id="bb1" value="" />
+				<label for="bb1"><i></i>Rest State</label>
+			</div>
 
-기본 클래스 : tmp-radio
+			<div class="tmp-radio type2 over">
+				<input type="radio" name="bio2" id="bb2" value="" />
+				<label for="bb2"><i></i>Hover</label>
+			</div>
+
+			<div class="tmp-radio type2 checked">
+				<input type="radio" name="bio2" id="bb3" value="" checked="checked"/>
+				<label for="bb3"><i></i>checked</label>
+			</div>
+
+			<div class="tmp-radio type2 disabled">
+				<input type="radio" name="bio2" id="bb" value="" disabled="disabled" />
+				<label for="bb"><i></i>Disabled</label>
+			</div>
+		</div>
+	</div>
+<pre class="html">
+Default
 <div class="tmp-radio"> 
 	<input type="radio" name="bio" id="b1" value="옵션값" />
 	<label for="b1"><i></i>옵션명</label>
 </div>
 
-Type Small : 클래스 type2 추가
+Option/Expand
 <div class="tmp-radio type"> 
 	<input type="radio" name="bio" id="b2" value="옵션값" />
 	<label for="b1"><i></i>옵션명</label>
 </div>
 
-State Class
 <div class="tmp-radio over">내용생략</div><!-- 마우스 오버시 -->
 <div class="tmp-radio checked">내용생략</div><!-- 선택시 -->
 <div class="tmp-radio disabled">내용생략</div><!-- 비활성 -->
-		</pre>
-	</article>
+</pre>
+
 </section>

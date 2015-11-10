@@ -34,7 +34,7 @@ define(['base'], function(Base){
         },
         loadController:function(){
             var _that = this;
-            var hash = (window.location.hash == '') ? '#/html/convention' : window.location.hash;
+            var hash = (window.location.hash == '') ? '#/html/about' : window.location.hash;
             var path = window.location.hash.split('/')[1];
             var ID = (_that.routes[path]) ? path : 'normal';
 
