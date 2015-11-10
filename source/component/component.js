@@ -1,4 +1,5 @@
 
+;(function($){
 var win = $(window);
 var doc = $(document);
 var body = $('body');
@@ -405,3 +406,5 @@ btnClassNew.on({
     focusout : function(){$(this).parent().removeClass('over')},
     mouseleave : function(){$(this).parent().removeClass('over')}
 });
+
+})(jQuery);
