@@ -21,6 +21,8 @@ requirejs.config({
     }
 });
 
+
+
 require(['router', 'controll_common', 'disqus', 'clipboard'], function(Route, Common, Sns, ClipBoard){
 
     "use strict";
