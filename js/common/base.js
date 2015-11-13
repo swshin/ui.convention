@@ -144,18 +144,18 @@ define(function(){
 
 	//html 파일 로드
 	var XhrLoader = function(url, callback){
-		console.log(url);
+		var arrName = url.split('.')[0].split('/');
 		var xmlhttp = null;
 		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
+			xmlhttp = new XMLHttpRequest();
 		}else{// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 		}
 
 		xmlhttp.onreadystatechange=function(){
-			if(this.readyState==4 && this.status == 200){
-				callback(this.responseText);
-			}else if(this.readyState==4 && this.status == 404){
+			if(this.readyState == 4 && this.status == 200){
+				callback(this.responseText, arrName[arrName.length-1]);
+			}else if(this.readyState == 4 && this.status == 404){
 				callback('page not found');
 			}
 		}

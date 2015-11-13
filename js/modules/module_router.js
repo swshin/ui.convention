@@ -48,6 +48,7 @@ define(['base'], function(Base){
                 Module.prototype.loadTemplete = function(hashLink){
                     var objHashLink = Base.getUriSplit(hashLink);
                     var params = objHashLink.params;
+                    
                     if(_that.controllerID) Base.loader('source/'+objHashLink.hashLink[0]+'/'+objHashLink.hashLink[1]+'.html', this.appendTemplete);
                     if(_that.script) Base.loader(_that.script, this.appendScript);
                     if(_that.css){

@@ -12,7 +12,8 @@
 3. Tab & navigation
 4. layer
 */
-jQuery(function($){
+
+(function(window, document, $){
 	var win = $(window);
 	var doc = $(document);
 
@@ -386,11 +387,4 @@ jQuery(function($){
 	$('.tmp-tab').tabAddOn(); // Tab
 	
 //	$('.img-type').gsSelect({currChage:false}); // Select
-
-
-
-		
-});
-
-(function(window, document, $){
-}(this, document, jQuery));
+})(this, document, jQuery);

@@ -29,7 +29,7 @@ define(['base', 'clipboard'], function(Base, ClipBoard){
             script.innerHTML = data;
             document.body.appendChild(script);
         },
-        appendStyle:function(name, data){
+        appendStyle:function(data, name){
             var styleSheet = document.createElement('style');
             styleSheet.id = name;
             styleSheet.type = 'text/css';
