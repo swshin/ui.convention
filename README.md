@@ -1,5 +1,6 @@
-# short url : http://goo.gl/Po4M4G
-# google analytics
+# 1번째 업데이트 (2015-11-13)
+# short-url : http://goo.gl/Po4M4G
+# google-analytics code
 # UA-69117374-1
 <script type="text/x-contents">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -12,4 +13,4 @@
 
 </script>
 
-uiconvention
+# repo-name : ui.convention
