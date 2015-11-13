@@ -1,39 +1,133 @@
-
+<link rel="stylesheet" type="text/css" href="css/import/default.css">
 <style type="text/css">
-section h3 {font-size:24px;font-weight:300;color:#443e2d}
-section h4 {font-size:18px;font-weight:600;color:#443e2d}
+.color-group li {float:left;width:48%;margin-bottom:4%;background:#fff}
+.color-group li:nth-child(odd) {margin-right:4%}
+.color-group .main-color {height:120px}
+.color-group .main-color {height:120px}
+.color-group .color {position:relative;height:24px;line-height:24px;padding:0 10px}
+.color-group .color span {position:absolute;top:0;right:10px}
+.color-group dl {position:relative;padding:0 10px 10px}
+.color-group dt {line-height:38px;color:#443e2d;font-size:16px}
+.color-group dl .txt {padding:10px 0;border-top:1px solid #ddd;font-size:12px;color:#666}
+.color-group dl .val {position:absolute;right:10px;top:11px;font-size:12px;color:#443e2d}
+
+.view-lst2 .f-img {max-width:300px}
+
+@media only screen and (max-width:767px){
+.view-lst2 li {width:100%}
+.view-lst2 li img {margin:15px 0}
+}
+@media only screen and (max-width:320px){
+.color-group li {float:none;width:100%;margin:0 0 20px 0}
+}
 </style>
-
-
-
-<h1>Color & Fonts</h1>
+<h1>Design Guide <strong>&gt; Color & Fonts</strong></h1>
 <section>
 	<h2>Color palette</h2>
 	<p class="pt13 mgt10 mgb10">Brand Identity에 정의된 브랜드 컬러를 기반으로 디바이스별 디스플레이에 최적화된 컬러칲을 규정합니다. <br>
 	제한적이고 일관된 컬러의 사용은 사용성과 브랜드 아이덴티티 유지 차원에서 매우 중요한 역할을 수행합니다.<br>
 	규정된 컬러가이드를 엄격히 준수하여야 합니다..</p>
 	<div class="mgt10 mgb40">
-		<a class="pt12 underline bold mgr20">Download color swatchs</a>
+		<a class="pt12 underline bold mgr20">Download color swatchs - 준비중</a>
 	</div>
-	<div>
-		<img src="/mi13/img/guide/color.jpg" alt="">
-	</div>	
+	<section class="d-sect2">
+		<ul class="color-group clearfix">
+			<li>
+				<div class="main-color" style="background:#cbdb2a"></div>
+				<dl>
+					<dt>Leaf Green</dt>
+					<dd class="val">#cbdb2a</dd>
+					<dd class="txt">GS SHOP의 메인 Identity Color입니다.
+					주요 UI 컬러로 활용되지만 White 배경의 좁은 면적에 단독 
+					사용 시 명도대비를 고려하여 신중하게 이용되어야 합니다.</dd>
+				</dl>
+			</li>
+			<li>
+				<div class="main-color" style="background:#443e2d"></div>
+				<dl>
+					<dt>Earth Brown</dt>
+					<dd class="val">#443e2d</dd>
+					<dd class="txt">Text 및 UI 요소의 주요 컬러로 활용됩니다.
+					특별한 경우가 아니면 가급적 넓은 면적의 사용을 제한하며,
+					Icon 등 작은 Element 요소에 이용하는 것을 권장합니다.</dd>
+				</dl>
+			</li>
+			<li>
+				<div class="main-color" style="background:#9b9570"></div>
+				<dl>
+					<dt>Clay Brown</dt>
+					<dd class="val">#9b9570</dd>
+					<dd class="txt">UI 요소의 서브 컬러로 활용됩니다.
+					[Leaf Green]과 함께 넓은 면적에 사용 가능하며, White 혼용
+					시에도 명도대비에 자유로운 컬러입니다.</dd>
+				</dl>
+			</li>
+			<li>
+				<div class="color white" style="background:#333"><em>text</em><span>#333333</span></div>
+				<div class="color white" style="background:#777"><em>text</em><span>#777777</span></div>
+				<div class="color" style="background:#aaa"><em>border</em><span>#aaaaaa</span></div>
+				<div class="color" style="background:#ddd"><em>line</em><span>#dddddd</span></div>
+				<div class="color" style="background:#eee"><em>background</em><span>#eeeeee</span></div>
+				<dl>
+					<dt>Gray</dt>
+					<dd class="txt">Line, Border, Background, Icon 등 다양한 UI 요소에 Gray는
+					효과적으로 활용될 수 있습니다.
+					규정된 Spectrum 외 너무 많은 Gray의 사용을 제한합니다.</dd>
+				</dl>
+			</li>
+			<li>
+				<div class="main-color" style="background:#e8175e"></div>
+				<dl>
+					<dt>Sunset Pink</dt>
+					<dd class="val">#e8175e</dd>
+					<dd class="txt">Point color로 활용됩니다.
+					특별히 강조해야 할 필요가 있는 영역에 매우 제한적으로 이
+					용되어야 합니다. 넓은 면적의 사용을 제한합니다.</dd>
+				</dl>
+			</li>
+			<li>
+				<div class="main-color" style="background:#16b7cc"></div>
+				<dl>
+					<dt>Aqua Blue</dt>
+					<dd class="val">#16b7cc</dd>
+					<dd class="txt">Sub color로 매우 제한적으로 사용해야 합니다.
+					Application이나 Contents 외에 UI 요소의 컬러로 활용되는
+					것을 엄격히 제한합니다.</dd>
+				</dl>
+			</li>
+		</ul>
+	</section><!--d-sect -->
 
 	<h2 class="mgt80 mgb10">Fonts</h2>
 	<p class="pt13 mgt10 mgb10">각 디바이스에서 지원하는 시스템 기본 폰트의 사용을 권장합니다.<br>
-	명도대비 및 일관성을 위하여 시스템폰트의 컬러는 #333, #777 외 다른 컬러의 사용을 제한합니다. <br>
+	명도대비 및 일관성을 위하여 시스템폰트의 컬러는 #333, , #555 외 다른 컬러의 사용을 비권장합니다. <br>
 	주요 강조가 필요한곳에 #e8175e을 제한적으로 사용할 수 있습니다. (흰색배경에 그린색 폰트의 단독 사용을 금지합니다.)<br>
 	nomal과 strong 구분에 대한 가이드는 없습니다. 문맥에서의 강조포인트를 제한적으로 사용하길 권장합니다.</p>
 
 	<div class="mgt10 mgb40">
-		<a class="pt12 underline bold mgr20">Download UI kit fot design</a>
-	</div>
+		<a class="pt12 underline bold mgr20">Font Download - 준비중</a>
+	</div>	
 	<h3 class="mgt40 mgb10">MalgunGothic - for Window PC</h3>
-	<div><img src="/mi13/img/guide/font01.jpg" alt=""></div>	
+	<article class="d-sect">
+		<ul class="view-lst2">
+			<li><img class="f-img" src="http://image.gsshop.com/mi13/img/guide/color/malgun_1.png" alt=""></li>
+			<li><img class="f-img" src="http://image.gsshop.com/mi13/img/guide/color/malgun_2.png" alt=""></li>
+		</ul>
+	</article>	
 
 	<h3 class="mgt40 mgb10">NanumGothic - for Android</h3>
-	<div><img src="/mi13/img/guide/font01.jpg" alt=""></div>	
+	<article class="d-sect">
+		<ul class="view-lst2">
+			<li><img class="f-img" src="http://image.gsshop.com/mi13/img/guide/color/nanum_1.png" alt=""></li>
+			<li><img class="f-img" src="http://image.gsshop.com/mi13/img/guide/color/nanum_2.png" alt=""></li>
+		</ul>
+	</article>		
 
 	<h3 class="mgt40 mgb10">AppleGothicNeoSD - for iOS</h3>
-	<div><img src="/mi13/img/guide/font01.jpg" alt=""></div>	
+	<article class="d-sect">
+		<ul class="view-lst2">
+			<li><img class="f-img" src="http://image.gsshop.com/mi13/img/guide/color/apple_1.png" alt=""></li>
+			<li><img class="f-img" src="http://image.gsshop.com/mi13/img/guide/color/apple_2.png" alt=""></li>
+		</ul>
+	</article>	
 </section> 
