@@ -135,7 +135,7 @@ define(['base'], function(Base){
 			if(_that.evtTarget.attr('style')){
 				_that.evtTarget.removeAttr('style');
 				_that.setDimTransition(false);
-				$('#side-nav').css({display:'none'});
+				$('#side-nav').css({display:''});
 			}
 		}
 	}
