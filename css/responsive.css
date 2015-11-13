@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* responsive style */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	header {position:fixed;height:40px;z-index:8;}
 	#side-nav {display:none;z-index:50;box-shadow:0px 0px 4px rgba(0,0,0,0.14), 0px 4px 8px rgba(0,0,0,0.28);}
 	.side-nav-wrap {z-index:51;}
@@ -22,7 +22,7 @@
 	.copyright {clear:both;}
 	.snippet-menu {display:none !important;}
 	.snippet-container {border:0;overflow:hidden;position:static;}
-	.snippet-wrap {overflow-x:scroll;overflow-y:auto;-webkit-overflow-scrolling: touch;/*-webkit-transform: translateZ(0);*/width:100%;background-color:#272822;-moz-overflow-scrolling: touch;-ms-scroll-chaining:chained; overflow-x: visible;}
+	.snippet-wrap {overflow-x:scroll;overflow-y:auto;-webkit-overflow-scrolling: touch;-webkit-transform: translateZ(0);width:100%;background-color:#272822;-moz-overflow-scrolling: touch;-ms-scroll-chaining:chained; overflow-x: visible;}
 	pre {white-space:nowrap;}
 	pre ol {border-left-width:0}
 	pre ol li {list-style:none;}
@@ -60,7 +60,7 @@
 	.contents h1.header-title {line-height:50px;height:60px;}
 
 	.snippet-container {border:0;overflow:hidden;position:static;}
-	.snippet-wrap {overflow-x:scroll;overflow-y:auto;-webkit-overflow-scrolling: touch;/*-webkit-transform: translateZ(0);*/width:100%;background-color:#272822;-moz-overflow-scrolling: touch;-ms-scroll-chaining:chained; overflow-x: visible;}
+	.snippet-wrap {overflow-x:scroll;overflow-y:auto;-webkit-overflow-scrolling: touch;-webkit-transform: translateZ(0);width:100%;background-color:#272822;-moz-overflow-scrolling: touch;-ms-scroll-chaining:chained; overflow-x: visible;}
 	pre {white-space:nowrap;}
 
 	.mobile-nowrap {display:inline-block;}
@@ -68,7 +68,7 @@
 
 @media (max-width: 414px) {
 	body, header {min-width:300px;overflow-x:hidden}
-	#side-nav {display:none;}
+	#side-nav {display:none;-webkit-transform:translateZ(0);}
 	.ico-cate {display:block;position:absolute;z-index:10;top:10px;left:10px;cursor:pointer;}
 	.contents h1 {padding:30px 0 10px 10px;font-size:30px;height:auto;line-height:40px;}
 	.contents h1.header-title {font-size:15px;line-height:45px;padding:0 0 0 45px;height:45px;}
