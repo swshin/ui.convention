@@ -4,6 +4,7 @@ define(['base', 'clipboard'], function(Base, ClipBoard){
 
     var Controller = function(){}
     var clipBoard;
+    var arrStyle = [];
 
     Controller.prototype = {
         init:function(){
@@ -28,17 +29,22 @@ define(['base', 'clipboard'], function(Base, ClipBoard){
             script.innerHTML = data;
             document.body.appendChild(script);
         },
-        appendStyle:function(data){
+        appendStyle:function(name, data){
             var styleSheet = document.createElement('style');
-            styleSheet.id = 'page-style';
+            styleSheet.id = name;
             styleSheet.type = 'text/css';
             styleSheet.rel = 'stylesheet';
             styleSheet.innerHTML = data;
             document.body.appendChild(styleSheet);
+
+            arrStyle.push(name);
         },
         destroy:function(){
             $('#page-script').remove();
-            $('#page-style').remove();
+
+            for(var index in arrStyle){
+                $('#' + arrStyle[index]).remove();
+            }
             clipBoard.destroy();
         }
     }

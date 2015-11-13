@@ -50,7 +50,11 @@ define(['base'], function(Base){
                     var params = objHashLink.params;
                     if(_that.controllerID) Base.loader('source/'+objHashLink.hashLink[0]+'/'+objHashLink.hashLink[1]+'.html', this.appendTemplete);
                     if(_that.script) Base.loader(_that.script, this.appendScript);
-                    if(_that.css) Base.loader(_that.css, this.appendStyle);
+                    if(_that.css){
+                        for(var index in _that.css){
+                            Base.loader(_that.css[index], this.appendStyle);
+                        }
+                    }
                     return this;
                 }
 
