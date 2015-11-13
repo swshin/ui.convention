@@ -1,4 +1,4 @@
-# gsuicov
+# short url : http://goo.gl/Po4M4G
 # google analytics
 # UA-69117374-1
 <script type="text/x-contents">
