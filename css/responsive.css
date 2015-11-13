@@ -56,9 +56,9 @@
 }
 
 @media (min-width: 768px) {
-	.contents h1 {padding-top:0;}
+	/*.contents h1 {padding-top:0;}
 	.contents h1.header-title {line-height:50px;height:60px;}
-
+	*/
 	.snippet-container {border:0;overflow:hidden;position:static;}
 	.snippet-wrap {overflow-x:scroll;overflow-y:auto;-webkit-overflow-scrolling: touch;-webkit-transform: translateZ(0);width:100%;background-color:#272822;-moz-overflow-scrolling: touch;-ms-scroll-chaining:chained; overflow-x: visible;}
 	pre {white-space:nowrap;}
