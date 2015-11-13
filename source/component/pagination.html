@@ -1,0 +1,145 @@
+<link rel="stylesheet" type="text/css" href="css/import/tmp_new.css">
+<link rel="stylesheet" type="text/css" href="css/import/default.css">
+<script type="text/javascript" src="/public/src/js/g-ui.js"></script>
+
+
+<h1>UI Component &gt; Pagination</h1>
+<section>
+	<h2>Overview</h2>
+	<p class="txt">현재 Icon은 하위 브라우져(IE9이하) 대응을 위해 sprite 이미지를 사용하고 있습니다. <br>
+	기본 클래스는 tmp-ico로 정의하고 특정 네이밍을 부여하지 않고 v1~32까지 정의되어 있습니다. <br>
+	inline-block속성이고 가로새로 24x24이며, 태그는 웹표준에 맞지 않으나 icon의 시멘틱 개념으로 i를 사용하고 있습니다. <br>
+	기본 컬러값 : #111, 투명도 : 0.5 (화이트/라임 해당사항 없음)
+	
+	<!-- * mobile이나 modern 브라우져에서 사용될 아이콘 폰트 제작 준비중 -->
+	</p>
+</section>
+
+<section>
+	<h2>Normal</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+	<div class="cpn-ex">
+		<div class="paging">
+			<a class="tmp-btn mid type-ico go-first" href="javascript:;"><span class="tmp-ico v27">처음</span></a>
+			<a class="tmp-btn mid type-ico go-prev" href="javascript:;"><span class="tmp-ico v25">이전</span></a>
+			<strong><span class="hide">현재</span>1<span class="hide">페이지</span></strong>
+			<a href="javascript:;">2<span class="hide">페이지</span></a>
+			<a href="javascript:;">3<span class="hide">페이지</span></a>
+			<a href="javascript:;">4<span class="hide">페이지</span></a>
+			<a href="javascript:;">5<span class="hide">페이지</span></a>
+			<a href="javascript:;">6<span class="hide">페이지</span></a>
+			<a href="javascript:;">7<span class="hide">페이지</span></a>
+			<a href="javascript:;">8<span class="hide">페이지</span></a>
+			<a href="javascript:;">9<span class="hide">페이지</span></a>
+			<a href="javascript:;">10<span class="hide">페이지</span></a>
+			<a class="tmp-btn mid type-ico go-next" href="javascript:;"><span class="tmp-ico v26">다음</span></a>
+			<a class="tmp-btn mid type-ico go-last" href="javascript:;"><span class="tmp-ico v28">마지막</span></a>
+		</div>
+	</div>
+<pre class="html">
+Default
+<div class="paging">
+	<a class="tmp-btn mid type-ico go-first" href="javascript:;"><span class="tmp-ico v27">처음</span></a>
+	<a class="tmp-btn mid type-ico go-prev" href="javascript:;"><span class="tmp-ico v25">이전</span></a>
+	<strong><span class="hide">현재</span>1<span class="hide">페이지</span></strong>
+	<a href="javascript:;">2<span class="hide">페이지</span></a>
+	<a href="javascript:;">3<span class="hide">페이지</span></a>
+	<a href="javascript:;">4<span class="hide">페이지</span></a>
+	<a href="javascript:;">5<span class="hide">페이지</span></a>
+	<a href="javascript:;">6<span class="hide">페이지</span></a>
+	<a href="javascript:;">7<span class="hide">페이지</span></a>
+	<a href="javascript:;">8<span class="hide">페이지</span></a>
+	<a href="javascript:;">9<span class="hide">페이지</span></a>
+	<a href="javascript:;">10<span class="hide">페이지</span></a>
+	<a class="tmp-btn mid type-ico go-next" href="javascript:;"><span class="tmp-ico v26">다음</span></a>
+	<a class="tmp-btn mid type-ico go-last" href="javascript:;"><span class="tmp-ico v28">마지막</span></a>
+</div>
+
+
+Option/Expand
+<i class="tmp-ico v1 lime"></i><!-- 클래스 lime 추가 -->
+<i class="tmp-ico v2 white"></i><!-- 클래스 white 추가 -->
+</pre>
+</section>
+
+<section>
+	<h2>Dot</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+		<div class="cpn-ex">
+			<div class="tmp-nav  mgb10">
+				<a href="javascript:;" class=""><span>1</span></a>
+				<a href="javascript:;" class="on"><span>2</span></a>
+				<a href="javascript:;"><span>3</span></a>
+				<a href="javascript:;"><span>4</span></a>
+				<a href="javascript:;"><span>5</span></a>
+				<a href="javascript:;"><span>6</span></a>
+			</div>
+		</div>
+		<pre class="html">
+Default
+<div class="tmp-nav">
+	<a href="javascript:;" class=""><span>1</span></a>
+	<a href="javascript:;" class="on"><span>2</span></a>
+	<a href="javascript:;"><span>3</span></a>
+	<a href="javascript:;"><span>4</span></a>
+	<a href="javascript:;"><span>5</span></a>
+	<a href="javascript:;"><span>6</span></a>
+</div>
+
+Option/Expand
+<i class="tmp-ico v1 lime"></i><!-- 클래스 lime 추가 -->
+<i class="tmp-ico v2 white"></i><!-- 클래스 white 추가 -->
+		</pre>
+		
+</section>
+
+<section>
+	<h2>Control - Horizontality</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+		<div class="cpn-ex">
+			<div class="inblock relative" style="width:100px">
+				<a class="tmp-btn type-ico ctrl-st prev" href="javascript:;"><span class="pagination"><strong>4</strong>/36</span><span class="tmp-ico v25">이전</span></a>
+				<a class="tmp-btn type-ico ctrl-st next" href="javascript:;"><span class="pagination"><strong>4</strong>/36</span><span class="tmp-ico v26">다음</span></a>
+			</div>
+
+			<div class="tmp-pg-box">
+				<span class="pagination"><strong>1</strong>/4</span>
+				<a class="tmp-btn mid type-ico prev" href="javascript:;" role="button"><span class="tmp-ico v25">이전</span></a>
+				<a class="tmp-btn mid type-ico next" href="javascript:;" role="button"><span class="tmp-ico v26">다음</span></a>
+			</div>
+		</div>
+		<pre class="html">
+Default
+<div class="inblock">
+	<a class="tmp-btn type-ico ctrl-st prev" href="javascript:;"><span class="pagination"><strong>4</strong>/36</span><span class="tmp-ico v25">이전</span></a><!-- 클래스 ctrl-st 추가 -->
+	<a class="tmp-btn type-ico ctrl-st next" href="javascript:;"><span class="pagination"><strong>4</strong>/36</span><span class="tmp-ico v26">다음</span></a>
+</div>
+
+<div class="tmp-pg-box">
+	<span class="pagination"><strong>1</strong>/4</span>
+	<a class="tmp-btn mid type-ico prev" href="javascript:;" role="button"><span class="tmp-ico v25">이전</span></a>
+	<a class="tmp-btn mid type-ico next" href="javascript:;" role="button"><span class="tmp-ico v26">다음</span></a>
+</div>
+		</pre>
+</section>
+
+<section>
+	<h2>Control - Verticality</h2>
+	<h3 class="design-view"><span>Design view</span></h3>
+		<div class="cpn-ex">
+			<div class="inblock relative" style="width:46px">
+				<a class="tmp-btn ctrl-st top" href="javascript:;"><span class="tmp-ico v40">맨위로</span></a>
+				<a class="tmp-btn ctrl-st up" href="javascript:;"><span class="tmp-ico v31">위로</span></a>
+				<a class="tmp-btn ctrl-st down" href="javascript:;"><span class="tmp-ico v32">아래로</span></a>
+			</div>
+			
+		</div>
+		<pre class="html">
+Default 
+<div class="inblock relative" style="width:46px">
+	<a class="tmp-btn ctrl-st top" href="javascript:;"><span class="tmp-ico v40">맨위로</span></a><!-- 클래스 ctrl-st 추가 -->
+	<a class="tmp-btn ctrl-st up" href="javascript:;"><span class="tmp-ico v31">위로</span></a>
+	<a class="tmp-btn ctrl-st down" href="javascript:;"><span class="tmp-ico v32">아래로</span></a>
+</div>
+		</pre>
+</section>
