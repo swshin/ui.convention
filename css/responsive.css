@@ -150,3 +150,19 @@
 	.mobile-nowrap .tmp-tab li:nth-child(n+3),
 	.mobile-nowrap .chk-lst li:nth-child(n+4) {display:none;}
 }
+
+
+/* 스마트폰 세로 */
+@media only screen and (max-width:320px){
+.d-sect {padding:30px 10px}
+.f-img {width:100%}
+}
+@media only screen and (max-width:980px){
+.f-img {width:100%}
+}
+/* iPad 가로+세로 */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.d-sect, .d-sect2 {padding:30px 15px}
+}
+
+/* responsive.css 정리예정 */

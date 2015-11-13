@@ -18,8 +18,7 @@ button{border:0;cursor:pointer}
 hr{display:none}
 legend {display:inline-block; overflow:hidden; position:absolute; left:-1000px; top:-1000px; visibility:hidden;width:0 !important; height:0 !important; padding:0 !important; font-size:0/0 m; color:rgba(255,255,255,0)}
 dfn {position:absolute;overflow:hidden;visibility:hidden;height:0;font:0/0 m} 
-
-body {height:100%;}
+html,body {height:100%;}
 caption {margin:20px 0 5px;font-weight:bold;text-align:left;}
 
 /* header */
@@ -66,6 +65,10 @@ section h3 {padding:20px 0 10px;font-size:24px;font-weight:normal}
 section h4 {overflow:hidden;height:25px;line-height:22px;margin:50px 0 12px;border-left:3px solid #cbdb2a;padding-left:10px;font-size:22px;font-weight:400}
 h1 + section {margin-top:30px}
 h2+h3 {padding-top:0;}
+/* Ãß°¡ */
+.tit4 {margin:12px 0;font:400 18px malgun gothic,applegothic}
+.tit-sub {overflow:hidden;height:25px;line-height:22px;margin:50px 0 12px;border-left:3px solid #cbdb2a;padding-left:10px;font-size:22px;font-weight:400}
+
 
 /* code setting */
 /* pre */
@@ -200,3 +203,17 @@ header .head-nav {padding:10px 20px;top:15px;}
 .fa.fa-external-link {color:#00aebd;margin-left:3px;}
 .after .fa.fa-angle-right {color:#00aebd;margin-right:3px;}
 .before .fa.fa-angle-right {color:#919191;margin-right:3px;}
+
+
+/* Design Contents */
+.d-sect,.d-sect2 {max-width:690px;padding:30px;margin:0;background:#fff;color:#444;font-size:13px;font-family:malgun gothic,AppleSDGothicNeoSD}
+.d-sect2 {max-width:738px;padding:20px 0;background:none}
+.d-sect .top-line {padding-top:50px;margin-top:50px;border-top:1px solid #eee}
+
+.view-lst2 {*zoom:1}
+.view-lst2 li {float:left;width:48%;margin-bottom:4%}
+.view-lst2 li:nth-child(odd) {margin-right:4%}
+.view-lst2:after {display:block;clear:both;content:""}
+
+
+
