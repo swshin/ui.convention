@@ -144,6 +144,7 @@ define(function(){
 
 	//html 파일 로드
 	var XhrLoader = function(url, callback){
+		console.log(url);
 		var xmlhttp = null;
 		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
 			xmlhttp=new XMLHttpRequest();
