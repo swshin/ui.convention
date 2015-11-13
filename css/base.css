@@ -143,7 +143,7 @@ header .head-nav {padding:10px 20px;top:15px;}
 
 #side-nav {position:fixed;left:0;bottom:0;top:0;background-color:#FFF;z-index:2;width:240px;overflow-x: hidden;overflow-y: auto;}
 .side-nav-wrap {position:relative;z-index:50;min-height:100%;}
-.left-nav {padding-top:20px;padding-bottom:120px;}
+.left-nav {padding-top:20px;padding-bottom:150px;}
 .left-nav .menu a {display:block;padding:0 22px;line-height:30px;font-size:13px;font-weight:bold;color:#443e2d;}
 .left-nav .menu a:hover {background:#f4f4f4;}
 .left-nav .menu {width:auto;margin:0 auto;}
