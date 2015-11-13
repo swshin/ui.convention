@@ -34,7 +34,7 @@ define(['base'], function(Base){
 		    	var $that = $(this);
 		    	$that.on({
 		    		'click':function(e){
-		    			if(Base.agentChk.getDeviceWidth() < 767){
+		    			if(Base.agentChk.getDeviceWidth() < 1024){
 		    				_that.setGnbStatus(false);
 		    			}
 		    		}

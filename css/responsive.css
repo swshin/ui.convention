@@ -68,7 +68,7 @@
 
 @media (max-width: 414px) {
 	body, header {min-width:300px;overflow-x:hidden}
-	#side-nav {display:none;-webkit-transform:translateZ(0);}
+	#side-nav {display:none;-webkit-overflow-scrolling: touch;-webkit-transform: translateZ(0);width:100%;background-color:#272822;-moz-overflow-scrolling: touch;-ms-scroll-chaining:chained;}
 	.ico-cate {display:block;position:absolute;z-index:10;top:10px;left:10px;cursor:pointer;}
 	.contents h1 {padding:30px 0 10px 10px;font-size:30px;height:auto;line-height:40px;}
 	.contents h1.header-title {font-size:15px;line-height:45px;padding:0 0 0 45px;height:45px;}
