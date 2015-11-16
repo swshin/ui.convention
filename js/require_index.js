@@ -32,6 +32,7 @@ require(['router', 'controll_common', 'disqus', 'clipboard'], function(Route, Co
 
     Route.registerRoutes({
         normal:{path:'/', controller:'controller/controll_normal'},
+        js:{path:'/js', controller:'controller/controll_normal', script:'source/component/g-ui.js', css:['css/import/tmp_new.css', 'css/import/default.css']},
         component:{path:'/component', controller:'controller/controll_normal', script:'source/component/g-ui.js', css:['css/import/tmp_new.css', 'css/import/default.css']},
         design:{path:'/design', controller:'controller/controll_normal', css:['css/import/tmp_new.css', 'css/import/default.css']},
         markdown:{path:'/markdown', controller:'controller/controll_markdown'}

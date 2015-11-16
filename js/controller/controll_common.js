@@ -20,7 +20,7 @@ define(['base', 'modules/module_gnb'], function(Base, Gnb){
             else $title.find('h1').removeClass('header-title');
         },
         resize:function(){
-            if(Base.agentChk.getDeviceWidth() < 767) gnb.destroy();
+            if(Base.agentChk.getDeviceWidth() < 1024) gnb.destroy();
         }
     }    
 
