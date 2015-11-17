@@ -22,25 +22,38 @@ define(['base'], function(Base){
 
             return _that;
     	},
-        registerRoutes:function(routes) {
-            var _that = this;
-
-            for (var route in routes) {
+        registerRoutes:function(routes){
+            var _that = this;            
+            for (var route in routes){
                 if (routes.hasOwnProperty(route)) {
                     _that.routes[route] = routes[route];
                 }
             }
+
             return _that;
         },
         loadController:function(){
             var _that = this;
             var hash = (window.location.hash == '') ? '#/html/about' : window.location.hash;
-            var path = window.location.hash.split('/')[1];
-            var ID = (_that.routes[path]) ? path : 'normal';
+            var pattern = new RegExp('(' + hash.split('#')[1] + ')');            
+            var routeCode = null;
+            var route = null;
 
-            _that.controllerID = _that.routes[ID].controller;
-            _that.script = _that.routes[ID].script;
-            _that.css = _that.routes[ID].css;
+            for(var index in _that.routes){
+                if(pattern.test(_that.routes[index].path)){
+                    routeCode = index;
+                    break;
+                }else{
+                    routeCode = null;
+                }
+            }
+
+            route = _that.routes[routeCode] || _that.routes[0];
+            console.log(route);
+
+            _that.controllerID = route.controller;
+            _that.script = route.script;
+            _that.css = route.css;
 
             require([_that.controllerID], function(Module){
 

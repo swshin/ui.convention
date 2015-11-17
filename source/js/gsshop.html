@@ -20,25 +20,34 @@
 </section> 
 
 <section>
-	<h2>$.fn.wooksAct (jquery plugIn)</h2>
+	<h2>$.fn.wooksAct</h2>
 	<h3 class="design-view"><span>Design View</span></h3>
 	<div class="cpn-ex">
-		<a href="javascript:;">바로가기<i class="fa fa-external-link"></i></a>
+		<a href="source/js/wooksact.html" target="_blank">바로가기<i class="fa fa-external-link"></i></a>
 	</div>
 
 	<pre class="html">
-<div id="ban-swipe1" class="Viewer">
-	<ul class="swiper-wrapper">
-		<li class="swiper-slide"><a href="#"><img src="이미지 URL" alt=""></a></li>
-		<li class="swiper-slide"><a href="#"><img src="이미지 URL" alt=""></a></li>
-		<li class="swiper-slide"><a href="#"><img src="이미지 URL" alt=""></a></li>
-	</ul>
-	<a class="ctrl-st2 prev" href="javascript:;">
-		<i class="pagination"><strong>1</strong>/4</i><span>이전</span>
-	</a>
-	<a class="ctrl-st2 next" href="javascript:;">
-		<i class="pagination"><strong>1</strong>/4</i><span>다음</span>
-	</a>
+<div class="ban-swipe swiper mgb20">
+	<h3 class="hide">기획전</h3>
+	<div id="ban-swipe1" class="Viewer">
+		<ul class="swiper-wrapper">
+			<li class="swiper-slide">
+				<a href="javascript:;"><img src="" alt=""></a>
+			</li>
+			<li class="swiper-slide">
+				<a href="javascript:;"><img src="" alt=""></a>
+			</li>
+			<li class="swiper-slide">
+				<a href="javascript:;"><img src="" alt=""></a>
+			</li>
+		</ul>
+		<a class="ctrl-st2 prev" href="javascript:;">
+			<i class="pagination"><strong>1</strong>/3</i><span>이전</span>
+		</a>
+		<a class="ctrl-st2 next" href="javascript:;">
+			<i class="pagination"><strong>1</strong>/3</i><span>다음</span>
+		</a>
+	</div>
 </div>
 	</pre>
 	<pre class="js">
@@ -62,10 +71,10 @@ $.fn.wooksAct.option = {
 	</pre>
 </section>
 <section>
-	<h2>$.fn.gsSwipe //idangerous swiper 확장형 jquery plugin (idangerous Swiper v2.5.5)</h2>
+	<h2>$.fn.gsSwipe //idangerous swiper (idangerous Swiper v2.5.5)</h2>
 	<h3 class="design-view"><span>Design View</span></h3>
 	<div class="cpn-ex">
-		<a href="javascript:;">바로가기<i class="fa fa-external-link"></i></a>
+		<a href="source/js/gsswipe.html" target="_blank">바로가기<i class="fa fa-external-link"></i></a>
 	</div>
 	<pre class="html">
 <div class="swiper-container">
@@ -114,42 +123,59 @@ $.fn.gsSwipe.option = {
 };
 	</pre>
 </section>
-<section>	
-	<h2>$.fn.placeHolder //input placeholder (jquery plugIn)</h2>
-	<pre class="js">
-/* Syntax */
-$(selector).placeHolder();
-	</pre>
-</section>
 <section>
-	<h2>$.fn.locationcenter (jquery plugIn)</h2>
-	<pre class="js">
-/* Syntax */
-$(selector).locationcenter(); // Dom object 가운데 띄우기
-	</pre>
-</section>
-<section>
-	<h2>$.fn.PriceOnly (jquery plugIn)</h2>
-	<pre class="js">
-/* Syntax */
-$(input).PriceOnly(); // 가격 숫자 단위변환
-	</pre>
-</section>
-<section>
-	<h2>modalBox Layer</h2>
-	<pre class="js">
-/* Syntax */
-modal.load(event, url, bg);	// Dom Object load
-modal.open(event, fx, bg);	// layer open
-modal.close(wrapClose);	// layer close
-modal.esc(event);	// layer close (ESC keyEvent)
-	</pre>
-</section>
-<section>
-	<h2>$.fn.gsSelect (jquery plugIn)</h2>
+	<h2>$.fn.gsSelect</h2>
 	<h3 class="design-view"><span>Design View</span></h3>
 	<div class="cpn-ex">
-		<a href="javascript:;">바로가기<i class="fa fa-external-link"></i></a>
+		<div class="unit">
+			<span class="tmp-select img-type">
+				<a class="current" href="#콤보박스" role="button">상품을 선택해주세요</a><span class="btn-opt line"><i class="arr2">옵션열기</i></span>
+				<ul style="top: 38px; bottom: auto;">
+					<li class="">
+						<a href="javascript:;">
+							<span class="opt-img"><img src="http://dummyimage.com/50x50/acacac/fff" alt="샘플이미지"></span>
+							<span class="opt-txt"><em>[선택1]</em> [ROCKFISH] 락피쉬 루시 레이스업 숏레인부츠 - 4COLOR</span>
+							<span class="opt-cnt">999,090</span>
+						</a>
+					</li>
+					<li class="">
+						<a href="javascript:;" role="button">
+							<span class="opt-img"><img src="http://dummyimage.com/50x50/f09292/fff" alt="샘플이미지"></span>
+							<span class="opt-txt"><em>[선택2]</em> [ROCKFISH] 락피쉬 루시 </span> 
+							<span class="opt-cnt">37,022</span>
+						</a>
+					</li>
+					<li class="">
+						<a href="javascript:;" role="button">
+							<span class="opt-img"><img src="http://dummyimage.com/50x50/f0d092/fff" alt="샘플이미지"></span>
+							<span class="opt-txt"><em>[선택3]</em> [ROCKFISH] 락피쉬 루시 레이스업 숏레인부츠 - 4COLOR 락피쉬 루시 레이스업 숏레인부츠 - 4COLOR</span>
+							<span class="opt-cnt">55,090</span>
+						</a>
+					</li>
+					<li class="disabled" data-alim="">
+						<a href="javascript:;" role="button">
+							<span class="opt-img"><img src="http://dummyimage.com/50x50/92f0af/fff" alt="샘플이미지"></span>
+							<span class="opt-txt"><em>[선택4]</em> [ROCKFISH] 락피쉬 루시 레이스업 숏레인부츠 - 4COLOR</span>
+							<span class="opt-cnt">0</span>
+						</a>
+					</li><!-- 상품평이 없는 상품의 경우 -->
+					<li class="">
+						<a href="javascript:;" role="button">
+							<span class="opt-img"><img src="http://dummyimage.com/50x50/92aff0/fff" alt="샘플이미지"></span>
+							<span class="opt-txt"><em>[선택5]</em> [ROCKFISH] 락피쉬 루시 레이스업 숏레인부츠 - 4COLOR</span>
+							<span class="opt-cnt">32,090</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" role="button">
+							<span class="opt-img"><img src="http://dummyimage.com/50x50/c792f0/fff" alt="샘플이미지"></span>
+							<span class="opt-txt"><em>[선택6]</em> [ROCKFISH] 락피쉬 루시 레이스업 숏레인부츠 - 4COLOR</span>
+							<span class="opt-cnt">540</span>
+						</a>
+					</li>
+				</ul>
+			</span>
+		</div>
 	</div>
 	<pre class="html">
 <div id="pgtype" class="tmp-select h30">
@@ -181,12 +207,40 @@ $.fn.gsSelect.option = {
 };
 	</pre>
 </section>
-<section>
-	<h2>UserAgent Check</h2>
+<section>	
+	<h2>$.fn.placeHolder //input placeholder</h2>
 	<h3 class="design-view"><span>Design View</span></h3>
 	<div class="cpn-ex">
-		<a href="javascript:;">바로가기<i class="fa fa-external-link"></i></a>
+		<input type="text" class="tmp-input" placeholder="내용을 입력하세요">
 	</div>
+	<pre class="js">
+/* Syntax */
+$(selector).placeHolder();
+	</pre>
+</section>
+<section>
+	<h2>$.fn.PriceOnly</h2>
+	<h3 class="design-view"><span>Design View</span></h3>
+	<div class="cpn-ex">
+		<input type="text" class="tmp-input only-price" value="542000">
+	</div>
+	<pre class="js">
+/* Syntax */
+$(input).PriceOnly(); // 가격 숫자 단위변환
+	</pre>
+</section>
+<section>
+	<h2>modalBox Layer</h2>
+	<pre class="js">
+/* Syntax */
+modal.load(event, url, bg);	// Dom Object load
+modal.open(event, fx, bg);	// layer open
+modal.close(wrapClose);	// layer close
+modal.esc(event);	// layer close (ESC keyEvent)
+	</pre>
+</section>
+<section>
+	<h2>UserAgent Check</h2>
 	<pre class="js">
 /* Syntax */
 GsBase.agentChk.getBrowser(); // browser 종류 버전
