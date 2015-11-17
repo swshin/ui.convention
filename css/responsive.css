@@ -61,7 +61,7 @@
 	*/
 	.snippet-container {border:0;overflow:hidden;position:static;}
 	.snippet-wrap {overflow-x:scroll;overflow-y:auto;-webkit-overflow-scrolling: touch;-webkit-transform: translateZ(0);width:100%;background-color:#272822;-moz-overflow-scrolling: touch;-ms-scroll-chaining:chained; overflow-x: visible;}
-	pre {white-space:nowrap;}
+	/*pre {white-space:nowrap;}*/
 
 	.mobile-nowrap {display:inline-block;}
 }
