@@ -23,20 +23,17 @@ requirejs.config({
 
 
 
-require(['router', 'controll_common', 'disqus', 'clipboard'], function(Route, Common, Sns, ClipBoard){
+require(['base', 'router', 'controll_common', 'disqus', 'clipboard'], function(Base, Route, Common, Sns, ClipBoard){
 
     "use strict";
 
     var common = new Common();
     var sns = new Sns();
 
-    Route.registerRoutes({
-        normal:{path:'/', controller:'controller/controll_normal'},
-        js:{path:'/js', controller:'controller/controll_normal', script:'source/component/g-ui.js', css:['css/import/tmp_new.css', 'css/import/default.css']},
-        component:{path:'/component', controller:'controller/controll_normal', script:'source/component/g-ui.js', css:['css/import/tmp_new.css', 'css/import/default.css']},
-        design:{path:'/design', controller:'controller/controll_normal', css:['css/import/tmp_new.css', 'css/import/default.css']},
-        markdown:{path:'/markdown', controller:'controller/controll_markdown'}
-    }).init().loadController();
+
+    Base.loader('js/json/routejson.json', function(data){
+        Route.registerRoutes(JSON.parse(data)).init().loadController();
+    });    
 
     //addCommonEvent
     $(window).scroll(function(e){
