@@ -13,6 +13,7 @@
 	h3 {font-size:16px;}
 
 	.container {margin:46px 0 0 0;}
+	#disqus_thread,
 	.contents {padding:60px 15px 0;}
 
 	.foot-link a {float:left;margin-right:20px;}
@@ -77,6 +78,7 @@
 	section h2 {font-size:20px;line-height:1.3em;}
 	h3 {font-size:16px;}
 
+	#disqus_thread ,
 	.contents {padding:50px 10px 0;}
 	.foot-link a {margin-right:10px;}
 	.foot-link .gsshop {width:86px;}
