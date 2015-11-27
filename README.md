@@ -1,3 +1,4 @@
+# 2016년 고도화 및 MC/PC 통합모듈 적용
 # 1번째 업데이트 (2015-11-13)
 # short-url : http://goo.gl/Po4M4G
 # google-analytics code : UA-69117374-1
